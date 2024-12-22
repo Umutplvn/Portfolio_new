@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { Divide as Hamburger } from "hamburger-react";
 import { useNavigate, Link, useLocation } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
-import { RxLinkedinLogo } from "react-icons/rx";
+import { ReactTyped } from "react-typed";
+
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -82,8 +82,7 @@ const Header = () => {
             UP
           </Typography>
         </Box>
-        <Box>Typed</Box>
-      </Box>
+          </Box>
 
       {/* Navigation links for large screens */}
       <Box
@@ -216,41 +215,33 @@ const Header = () => {
             justifyContent: "center",
             alignItems: "center",
             gap: "0.5rem",
+            width:"10rem",
+            fontFamily: "Montserrat, sans-serif",
           }}
         >
-          <Box
-            sx={{
-              fontSize: "1.7rem",
-              color: "black",
-              ":hover": {
-                cursor: "pointer",
-                transform: "scale(1.05)",
-                transition: "transform 0.3s ease-in-out",
-              },
-            }}
-            component="a"
-            href="https://github.com/Umutplvn"
-            target="_blank"
-          >
-            <FaGithub />
-          </Box>
-
-          <Box
-            sx={{
-              fontSize: "1.7rem",
-              color: "#0B65C2",
-              ":hover": {
-                cursor: "pointer",
-                transform: "scale(1.05)",
-                transition: "transform 0.3s ease-in-out",
-              },
-            }}
-            component="a"
-            target="_blank"
-            href="https://www.linkedin.com/in/umut-pehlivan-817b28174/"
-          >
-            <RxLinkedinLogo />
-          </Box>
+      <Typography
+        sx={{
+          fontSize: '1rem',
+          fontWeight:"550",
+          background: 'linear-gradient(to right, #9b59b6, #8e44ad, #6a1b9a, #4a148c)',
+          WebkitBackgroundClip: 'text',
+          color: 'transparent',
+        }}
+      >
+        <ReactTyped
+          strings={[
+            "Web Developer",
+            "Scalable Apps",
+            "Tech Enthusiast",
+            "Code with Passion",
+            "Let's Connect"
+                    ]}
+          typeSpeed={100}
+          backSpeed={100}
+          loop
+        />
+      </Typography>
+     
         </Box>
       </Box>
 
