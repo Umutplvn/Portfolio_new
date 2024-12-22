@@ -1,12 +1,27 @@
 import { Box, Button, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import responsiveImg from "../assets/responsive.webp";
 import bulb from "../assets/bulb.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [hover, setHover] = useState(false);
+  const [transform, setTransform] = useState(false)
+  const [transform1, setTransform1] = useState(false)
+  const [transform2, setTransform2] = useState(false)
+ 
+
+  useEffect(() => {
+    setTimeout(()=>{
+      setTransform(true);
+    }, 400)
+    setTimeout(()=>{
+      setTransform1(true)
+    }, 700)
+    setTimeout(()=>{
+      setTransform2(true)
+    }, 600)
+  }, []);
 
   return (
     <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb:"4rem" }}>
@@ -30,9 +45,13 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            transform: transform2 ? "translateY(0)" : "translateY(-0.5rem)",
+            opacity:transform2?"1":"0",
+            transition: "transform 1s ease-in-out, opacity 1s ease-in-out"
           }}
         >
           <img
+
             src={responsiveImg}
             alt="responsive"
             style={{ maxWidth: "35rem", width: "100%", padding: "2rem" }}
@@ -48,7 +67,11 @@ const Home = () => {
                 textAlign: { xs: "center", md: "left" },
                 lineHeight: "50px",
                 fontFamily: "sans-serif",
+                transform: transform ? "translateY(0)" : "translateY(-1rem)",
+          color: transform ? "black" : "#EEEEEC",
+          transition: "transform 1s ease-in-out, color 1s ease-in-out",
               }}
+
             >
               Turning Vision Into Reality With Code and Creativity
             </Typography>
@@ -59,6 +82,9 @@ const Home = () => {
                 textAlign: { xs: "center", md: "left" },
                 fontFamily: "sans-serif",
                 mt: "1rem",
+                transform: transform1 ? "translateY(-1rem)" : "translateY(0)",
+                color: transform1 ? "black" : "#EEEEEC",
+                transition: "transform 1s ease-in-out, color 1s ease-in-out"
               }}
             >
               As a skilled full-stack developer, I am dedicated to turning ideas
@@ -72,7 +98,11 @@ const Home = () => {
                 display: "flex",
                 alignItems: "center",
                 gap: "1.5rem",
+                justifyContent: { xs: "center", md: "left" },
+                opacity:transform2?"1":"0",
+                transition: "opacity 1s ease-in-out"
               }}
+
             >
               <Button
                 variant="outlined"
@@ -126,7 +156,11 @@ const Home = () => {
             </Box>
           </Box>
 
-          <Box sx={{ display:{xs:"none", md:"block"}, position: "absolute", right: "3rem", width:{md:"5rem", lg:"7rem"} }}>
+          <Box sx={{ display:{xs:"none", md:"block"}, position: "absolute", right: "3rem", width:{md:"5rem", lg:"7rem"},
+          opacity:transform2?"1":"0",
+          transition: "opacity 1s ease-in-out"
+
+        }}>
             <img src={bulb} alt="bulb" style={{ width: "100%" }} />
           </Box>
         </Box>

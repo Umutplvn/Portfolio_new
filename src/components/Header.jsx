@@ -9,6 +9,7 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [innerText, setInnerText] = useState("");
+
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -31,6 +32,9 @@ const Header = () => {
     setOpen(false);
     navigate("/");
   };
+
+
+  
 
   return (
     <header>
@@ -215,8 +219,7 @@ const Header = () => {
             justifyContent: "center",
             alignItems: "center",
             gap: "0.5rem",
-            width:"10rem",
-            fontFamily: "Montserrat, sans-serif",
+            width:"9rem",
           }}
         >
       <Typography
