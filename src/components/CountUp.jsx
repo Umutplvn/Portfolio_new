@@ -34,7 +34,8 @@ const CountUpPage = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          
+          width:"100px"
+
         }}
       >
         <Typography sx={{ fontWeight: "800", fontSize: "3rem",   }}>
@@ -55,7 +56,7 @@ const CountUpPage = () => {
         </Typography>
         <Typography sx={{ fontSize: "1rem", color: "#515151", transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
-              transition: "transform 1s ease-in-out, color 1s ease-in-out" }}>
+              transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center" }}>
           Projects Completed
         </Typography>
       </Box>
@@ -65,6 +66,7 @@ const CountUpPage = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          
         }}
       >
         <Typography sx={{ fontWeight: "800", fontSize: "3rem" }}>
@@ -85,7 +87,7 @@ const CountUpPage = () => {
         </Typography>
         <Typography sx={{ fontSize: "1rem", color: "#515151",  transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
-              transition: "transform 1s ease-in-out, color 1s ease-in-out"  }}>
+              transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center"  }}>
           Technologies Mastered
         </Typography>
       </Box>
@@ -95,6 +97,7 @@ const CountUpPage = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          width:"100px"
         }}
       >
         <Typography sx={{ fontWeight: "800", fontSize: "3rem" }}>
@@ -115,7 +118,7 @@ const CountUpPage = () => {
         </Typography>
         <Typography sx={{ fontSize: "1rem", color: "#515151",  transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
-              transition: "transform 1s ease-in-out, color 1s ease-in-out"  }}>
+              transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center"  }}>
           Years of Experience
         </Typography>
       </Box>

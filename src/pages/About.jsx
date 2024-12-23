@@ -26,7 +26,7 @@ const About = () => {
     }, 600);
   }, []);
 
-  //Use Reff Count Up
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -48,16 +48,16 @@ const About = () => {
     };
   }, []);
 
-  // Use Ref Skill Cards
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry.isIntersecting); // Debugging: Görünürlük durumu
+        console.log(entry.isIntersecting); 
         if (entry.isIntersecting) {
           setInView1(true);
         }
       },
-      { threshold: 0.5 } // Gözlemlenen öğe yüzde 50 görünür olduğunda tetiklenir.
+      { threshold: 0.5 } 
     );
 
     if (countUpRef1.current) {
@@ -71,7 +71,8 @@ const About = () => {
     };
   }, []);
 
-  return (
+
+return (
     <>
       <Box
         sx={{
@@ -113,8 +114,8 @@ const About = () => {
               flexWrap: "wrap",
               gap: "2rem",
               alignItems: "flex-start",
-              padding: "0 2rem",
-              justifyContent: "center",
+              padding:{xs: "0 2rem", lg:"0"},
+              justifyContent:{xs: "center", lg:"space-around"},
             }}
           >
             <Box
@@ -252,7 +253,7 @@ const About = () => {
             <Box
               sx={{
                 width: "100%",
-                height: "35rem",
+                height: "75rem",
                 position: "relative",
               }}
             >

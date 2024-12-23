@@ -1,11 +1,24 @@
 body {
-  --background: var(--black);
+  /* --background: var(--black); */
   --accent: var(--black);
   margin: 0;
   background-color: var(--background);
   color: var(--accent);
 }
 
+
+
+  .connecting-line {
+    position: absolute;
+    /* z-index: 0; */
+    top: 50%;
+    left: 0;
+    width: 4px;
+    background-color: black;
+    transform: translateX(-34px) translateY(-15px);
+    transition: height 0.1s ease-out;
+  }
+  
 /* Progress Circle Styling */
 .progress {
   position: relative;
@@ -17,12 +30,14 @@ body {
 
 .progress svg {
   transform: translateX(-50px) rotate(-90deg);
+    /* overflow: hidden; */
+
 }
 
 circle {
   stroke-dashoffset: 0;
   stroke-width: 10px;
-  fill: none;
+  fill: none;  
 }
 
 .bg {
@@ -37,10 +52,10 @@ circle {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   height: 12px;
-  width: 5px;
-  background: var(--background);
+  width:0px;
+  background: white;
+  
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
@@ -50,7 +65,12 @@ circle {
 ::-webkit-scrollbar-corner {
   background: var(--background);
 }
-
+.progress-container {
+    position: relative;
+    top:0
+  }
+  
+ 
 
 
 /* Yeni animasyonlu nokta için */
@@ -72,5 +92,6 @@ circle {
   .pulse-dot {
     animation: pulse 1.5s infinite ease-in-out;
     fill: #b63e96;
+    
   }
   

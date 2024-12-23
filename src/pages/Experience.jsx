@@ -1,18 +1,20 @@
 import "../styles/Scroll.css";
 import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Box, Typography } from "@mui/material";
 
-function Item({ children }) {
+function Item({ children, isLastItem }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"]
+    offset: ["center end", "center center"]
   });
 
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   return (
-    <section>
-      <div ref={ref}>
+
+      <div ref={ref} className="progress-container">
         <figure className="progress">
           <svg id="progress" width="35" height="35" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
@@ -24,32 +26,38 @@ function Item({ children }) {
               className="indicator"
               style={{ pathLength: scrollYProgress }}
             />
-                  <motion.circle
+            <motion.circle
               cx="50"
               cy="50"
-              r="10" 
+              r="15"
               className="pulse-dot"
               animate={{
-                opacity: [0.5, 1, 0.5], 
-                scale: [0.8, 1, 0.8], 
+                opacity: [ 0.1, 1],
+                scale: [0.8, 4.5, 0.8],
               }}
               transition={{
-                duration: 1.5,
-                repeat: Infinity, 
+                duration: 1,
+                repeat: Infinity,
                 ease: "easeInOut",
               }}
             />
           </svg>
         </figure>
+        
+          <motion.div
+            className="connecting-line"
+            style={{
+              height: lineHeight
+            }}
+          />
         {children}
       </div>
-    </section>
   );
 }
 
 export default function Experience() {
   return (
-    <Box sx={{ width: "85%", display: "flex", justifyContent: "center",  flexDirection: "column", alignItems: "center", m:"auto" }}>
+    <Box sx={{ padding:{xs:"0 2rem", md:"0"}, display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
       <Item>
         <Box sx={{ maxWidth: "40rem" }}>
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Full Stack Developer <strong style={{ color: "#B53D95" }}>@Gravitad</strong></Typography>
@@ -90,7 +98,7 @@ export default function Experience() {
         </Box>
       </Item>
 
-      <Item>
+      <Item isLastItem>
         <Box sx={{ maxWidth: "40rem" }}>
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Production Engineering Specialist <strong style={{ color: "#B53D95" }}>@Elkon CCBP</strong></Typography>
           <Typography sx={{ color: "#515151" }}>Aug 2018–Apr 2019 | Tekirdag, Turkey</Typography>
