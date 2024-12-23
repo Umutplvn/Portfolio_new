@@ -72,14 +72,14 @@ const About = () => {
   }, []);
 
   return (
-    <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb: "4rem" }}>
+    <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb:"45rem" }}>
       <Box sx={{ maxWidth: "1200px", m: "auto" }}>
         {/* HEADER */}
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Typography
             component={"h1"}
             sx={{
-              fontSize: { xs: "4rem", lg: "5rem" },
+              fontSize: { xs: "3rem", lg: "4rem" },
               fontWeight: "900",
               textAlign: "center",
               pt: "2rem",
@@ -136,7 +136,7 @@ const About = () => {
           >
             <Typography
               sx={{
-                fontSize: "1.1rem",
+                fontSize: "1.2rem",
                 transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
                 color: transform1 ? "black" : "#EEEEEC",
                 transition: "transform 1s ease-in-out, color 1s ease-in-out",
@@ -145,7 +145,7 @@ const About = () => {
               <strong
                 style={{
                   color: "#515151",
-                  fontSize: "1.2rem",
+                  fontSize: "1.3rem",
                   transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
                   color: transform1 ? "black" : "#EEEEEC",
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
@@ -221,7 +221,7 @@ const About = () => {
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "4rem", lg: "5rem" },
+                  fontSize: { xs: "3rem", lg: "4rem" },
                   fontWeight: "900",
                   textAlign: "center",
                   pt: "2rem",
@@ -245,7 +245,7 @@ const About = () => {
           >
             <Typography
               sx={{
-                fontSize: { xs: "4rem", lg: "5rem" },
+                fontSize: { xs: "3rem", lg: "4rem" },
                 fontWeight: "900",
                 textAlign: "center",
                 pt: "2rem",
@@ -256,7 +256,7 @@ const About = () => {
 
             {/* {inView1 && <Skills  />} */}
             <Experience/>
-            
+
           </Box>
         </Box>
       </Box>
