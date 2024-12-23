@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography } from "@mui/material";
 import brainImg from "../assets/Brainn.webp";
 import CountUpPage from "../components/CountUp";
+import Skills from "../components/Skills";
 
 const About = () => {
   const [inView, setInView] = useState(false);
@@ -174,6 +175,9 @@ const About = () => {
           >
             {inView && <CountUpPage />}
           </Box>
+
+          {/* Skills */}
+          <Skills/>
         </Box>
       </Box>
     </Box>
