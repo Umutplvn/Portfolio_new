@@ -237,6 +237,7 @@ const About = () => {
                     fontWeight: "900",
                     textAlign: "center",
                     pt: "2rem",
+                    color:"black"
                   }}
                 >
                   Skills
@@ -261,12 +262,12 @@ const About = () => {
                   fontWeight: "900",
                   textAlign: "center",
                   pt: "2rem",
+                  color:"black"
                 }}
               >
                 Experience
               </Typography>
 
-              {/* {inView1 && <Skills  />} */}
               <Experience />
             </Box>
           </Box>
