@@ -7,6 +7,8 @@ import Skills from "../components/Skills";
 const About = () => {
   const [inView, setInView] = useState(false);
   const countUpRef = useRef(null);
+  const [inView1, setInView1] = useState(false);
+  const countUpRef1 = useRef(null);
   const [transform, setTransform] = useState(false);
   const [transform1, setTransform1] = useState(false);
   const [transform2, setTransform2] = useState(false);
@@ -23,6 +25,7 @@ const About = () => {
     }, 600);
   }, []);
 
+  //Use Reff Count Up
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -44,6 +47,29 @@ const About = () => {
     };
   }, []);
 
+  // Use Ref Skill Cards
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Debugging: Görünürlük durumu
+        if (entry.isIntersecting) {
+          setInView1(true);
+        }
+      },
+      { threshold: 0.5 } // Gözlemlenen öğe yüzde 50 görünür olduğunda tetiklenir.
+    );
+
+    if (countUpRef1.current) {
+      observer.observe(countUpRef1.current);
+    }
+
+    return () => {
+      if (countUpRef1.current) {
+        observer.unobserve(countUpRef1.current);
+      }
+    };
+  }, []);
+
   return (
     <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb: "4rem" }}>
       <Box sx={{ maxWidth: "1200px", m: "auto" }}>
@@ -61,7 +87,7 @@ const About = () => {
               width: { xs: "100%", sm: "500px", md: "100%" },
               transform: transform ? "translateY(-1rem)" : "translateY(0)",
               color: transform ? "black" : "#EEEEEC",
-              transition: "transform 1s ease-in-out, color 1s ease-in-out"
+              transition: "transform 1s ease-in-out, color 1s ease-in-out",
             }}
           >
             Passion Fuels Purpose!
@@ -152,7 +178,7 @@ const About = () => {
               display: { xs: "none", lg: "flex" },
               transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
               opacity: transform2 ? "1" : "0",
-              transition: "transform 1s ease-in-out, opacity 1s ease-in-out"
+              transition: "transform 1s ease-in-out, opacity 1s ease-in-out",
             }}
           >
             <img
@@ -166,18 +192,47 @@ const About = () => {
           <Box
             ref={countUpRef}
             sx={{
-              display:"flex",
+              display: "flex",
               width: { xs: "100%", lg: "20%" },
               flexDirection: { xs: "row", lg: "column" },
-              alignItems:"center",
-              
+              alignItems: "center",
             }}
           >
             {inView && <CountUpPage />}
           </Box>
 
           {/* Skills */}
-          <Skills/>
+          <Box
+            ref={countUpRef1}
+            sx={{
+              position: "relative",
+              width: { xs: "100%", lg: "20%" },
+              overflow: "hidden",
+              display: "flex",
+            }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                height: "35rem",
+                position: "relative",
+
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: { xs: "4rem", lg: "5rem" },
+                  fontWeight: "900",
+                  textAlign: "center",
+                  pt: "2rem",
+                }}
+              >
+                Skills
+              </Typography>
+
+              {inView1 && <Skills  />}
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
