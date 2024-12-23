@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import brainImg from "../assets/Brainn.webp";
 import CountUpPage from "../components/CountUp";
 import Skills from "../components/Skills";
+import Experience from "./Experience";
 
 const About = () => {
   const [inView, setInView] = useState(false);
@@ -216,7 +217,6 @@ const About = () => {
                 width: "100%",
                 height: "35rem",
                 position: "relative",
-
               }}
             >
               <Typography
@@ -230,8 +230,33 @@ const About = () => {
                 Skills
               </Typography>
 
-              {inView1 && <Skills  />}
+              {inView1 && <Skills />}
             </Box>
+          </Box>
+
+          {/* Experience */}
+
+          <Box
+            sx={{
+              width: "100%",
+              height: "35rem",
+              position: "relative",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: { xs: "4rem", lg: "5rem" },
+                fontWeight: "900",
+                textAlign: "center",
+                pt: "2rem",
+              }}
+            >
+              Experience
+            </Typography>
+
+            {/* {inView1 && <Skills  />} */}
+            <Experience/>
+            
           </Box>
         </Box>
       </Box>
