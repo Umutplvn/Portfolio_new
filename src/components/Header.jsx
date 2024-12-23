@@ -31,6 +31,7 @@ const Header = () => {
   const handleClickCL = () => {
     setOpen(false);
     navigate("/");
+    setInnerText("Home");
   };
 
 
@@ -38,7 +39,7 @@ const Header = () => {
 
   return (
     <header>
-    <Box sx={{  backgroundColor: "#EEEEEC",
+    <Box sx={{  backgroundColor: "#EEEEEC",  minHeight:"10vh"
   }}>
     <Box sx={{ maxWidth:"1200px",
     m:"auto"}}>

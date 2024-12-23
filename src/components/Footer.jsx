@@ -1,121 +1,126 @@
 import { Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { MdContactMail } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
 
 const Footer = () => {
-  const [hoveredIcon, setHoveredIcon] = useState(null);
-
-  const handleMouseEnter = (icon) => {
-    setHoveredIcon(icon);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIcon(null);
-  };
 
   return (
-    <footer>
-      <Box sx={{ backgroundColor: "#EEEEEC", borderTop: "2px solid black",}}>
-        <Box
+    <Box
+      sx={{
+        backgroundColor: "#EEEEEC",
+        borderTop: "2px solid black",
+        width: "100%",
+        minHeight: "10vh",
+        // position:"fixed",
+        // bottom:0
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          p: "1.5rem 1.5rem",
+          backgroundColor: "#EEEEEC",
+          maxWidth: "1200px",
+          m: "auto",
+        }}
+      >
+        <Typography
           sx={{
-            position: "static",
-            bottom:0,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            p: "1.5rem 1rem",
-            backgroundColor: "#EEEEEC",
-            maxWidth: "1200px",
-            m: "auto",
+            display: { xs: "none", sm: "block" },
+            maxWidth: "380px",
+            textAlign: "center",
+            fontWeight: "500",
+            color:"#5b5b5b"
           }}
         >
-          <Typography
-            sx={{
-              display: { xs: "none", sm: "block" },
-              maxWidth: "380px",
-              textAlign: "center",
-              fontWeight: "500",
-            }}
-          >
-            2024 © All Rights Reserved.
-          </Typography>
+          2024 © All Rights Reserved.
+        </Typography>
 
-          <Typography
+        <Typography
+          sx={{
+            display: { xs: "none", sm: "flex" },
+            maxWidth: "380px",
+            textAlign: "center",
+            fontWeight: "500",
+            color:"#5b5b5b", 
+            justifyContent:"center",
+             alignItems:"center"
+
+          }}
+        >
+          
+          Built with
+          <FaRegHeart style={{color:"#B63E96", margin:"0 5px"}}/>
+          by Umut
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "0.7rem",
+            width: { xs: "100%", sm: "7rem" },
+          }}
+        >
+          <Box
             sx={{
-              display: { xs: "none", sm: "block" },
-              maxWidth: "380px",
-              textAlign: "center",
-              fontWeight: "500",
+              fontSize: "1.7rem",
+              color: "black",
+              ":hover": {
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "transform 0.3s ease-in-out",
+              },
             }}
+            component="a"
+            href="https://github.com/Umutplvn"
+            target="_blank"
           >
-            Built by Umut
-          </Typography>
+            <FaGithub />
+          </Box>
 
           <Box
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "0.7rem",
-              width: { xs: "100%", sm: "7rem" },
+              fontSize: "1.7rem",
+              color: "#0B65C2",
+              ":hover": {
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "transform 0.3s ease-in-out",
+              },
             }}
+            component="a"
+            target="_blank"
+            href="https://www.linkedin.com/in/umut-pehlivan-817b28174/"
           >
-            <Box
-              sx={{
-                fontSize: "1.7rem",
-                color: "black",
-                ":hover": {
-                  cursor: "pointer",
-                  transform: "scale(1.05)",
-                  transition: "transform 0.3s ease-in-out",
-                },
-              }}
-              component="a"
-              href="https://github.com/Umutplvn"
-              target="_blank"
-            >
-              <FaGithub />
-            </Box>
+            <RxLinkedinLogo />
+          </Box>
 
-            <Box
-              sx={{
-                fontSize: "1.7rem",
-                color: "#0B65C2",
-                ":hover": {
-                  cursor: "pointer",
-                  transform: "scale(1.05)",
-                  transition: "transform 0.3s ease-in-out",
-                },
-              }}
-              component="a"
-              target="_blank"
-              href="https://www.linkedin.com/in/umut-pehlivan-817b28174/"
-            >
-              <RxLinkedinLogo />
-            </Box>
-
-            <Box
-              sx={{
-                fontSize: "1.7rem",
-                color: "#E24134",
-                ":hover": {
-                  cursor: "pointer",
-                  transform: "scale(1.05)",
-                  transition: "transform 0.3s ease-in-out",
-                },
-              }}
-              component="a"
-              target="_blank"
-              href="mailto:umutpehlivan2078@gmail.com"
-            >
-              <MdContactMail />
-            </Box>
+          <Box
+            sx={{
+              fontSize: "1.7rem",
+              color: "#E24134",
+              ":hover": {
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "transform 0.3s ease-in-out",
+              },
+            }}
+            component="a"
+            target="_blank"
+            href="mailto:umutpehlivan2078@gmail.com"
+          >
+            <MdContactMail />
           </Box>
         </Box>
       </Box>
-    </footer>
+    </Box>
   );
 };
 

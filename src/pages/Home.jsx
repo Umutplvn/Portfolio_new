@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import responsiveImg from "../assets/responsive.webp";
 import bulb from "../assets/bulb.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [hover, setHover] = useState(false);
@@ -24,7 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb:"4rem" }}>
+    <Box sx={{ backgroundColor: "#EEEEEC", width: "100vw", pb:{xs:"15rem", sm:"0"}, minHeight:"80vh" }}>
       <Box
         sx={{
           backgroundColor: "#EEEEEC",
@@ -34,8 +35,8 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           maxWidth: "1200px",
-          m: "auto",
-        }}
+          m: "auto" 
+         }}
       >
         <Box
           sx={{
@@ -166,6 +167,7 @@ const Home = () => {
         </Box>
       </Box>
     </Box>
+
   );
 };
 
