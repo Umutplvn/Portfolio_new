@@ -73,7 +73,7 @@ const About = () => {
 
 
 return (
-    <>
+    <body>
       <Box
         sx={{
           backgroundColor: "#EEEEEC",
@@ -84,9 +84,11 @@ return (
       >
         <Box sx={{ maxWidth: "1200px", m: "auto" }}>
           {/*Main Title */}
+          <section>
           <Box
             sx={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
+
             <Typography
               component={"h1"}
               sx={{
@@ -101,12 +103,13 @@ return (
                 color: transform ? "black" : "#EEEEEC",
                 transition: "transform 1s ease-in-out, color 1s ease-in-out",
               }}
-            >
+              >
               Passion Fuels Purpose!
             </Typography>
           </Box>
+              </section>
 
-          {/* Second Section */}
+       
           <Box
             sx={{
               width: "100%",
@@ -118,6 +121,7 @@ return (
               justifyContent:{xs: "center", lg:"space-around"},
             }}
           >
+            
             <Box
               sx={{
                 maxWidth: "35rem",
@@ -202,7 +206,6 @@ return (
               />
             </Box>
 
-            {/* Count Up Section */}
             <Box
               ref={countUpRef}
               sx={{
@@ -214,6 +217,8 @@ return (
             >
               {inView && <CountUpPage />}
             </Box>
+            {/* Count Up Section */}
+
 
             {/* Skills */}
             <Box
@@ -295,7 +300,7 @@ return (
           </Box>
         </Box>
       </Box>
-    </>
+    </body>
   );
 };
 
