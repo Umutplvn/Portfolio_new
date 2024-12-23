@@ -206,7 +206,7 @@ const About = () => {
             ref={countUpRef1}
             sx={{
               position: "relative",
-              width: { xs: "100%", lg: "20%" },
+              width: "100%",
               overflow: "hidden",
               display: "flex",
             }}
