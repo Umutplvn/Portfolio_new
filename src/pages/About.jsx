@@ -3,7 +3,8 @@ import { Box, Typography } from "@mui/material";
 import brainImg from "../assets/Brainn.webp";
 import CountUpPage from "../components/CountUp";
 import Skills from "../components/Skills";
-import Experience from "./Experience";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
 
 const About = () => {
   const [inView, setInView] = useState(false);
@@ -52,7 +53,6 @@ const About = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry.isIntersecting); 
         if (entry.isIntersecting) {
           setInView1(true);
         }
@@ -79,7 +79,7 @@ return (
           backgroundColor: "#EEEEEC",
           width: "100vw",
           minHeight: "80vh",
-          pb: "50rem",
+          pb: "20rem",
         }}
       >
         <Box sx={{ maxWidth: "1200px", m: "auto" }}>
@@ -114,7 +114,7 @@ return (
               flexWrap: "wrap",
               gap: "2rem",
               alignItems: "flex-start",
-              padding:{xs: "0 2rem", lg:"0"},
+              padding:{xs: "0 1.5rem", lg:"0"},
               justifyContent:{xs: "center", lg:"space-around"},
             }}
           >
@@ -253,8 +253,6 @@ return (
             <Box
               sx={{
                 width: "100%",
-                height: "75rem",
-                position: "relative",
               }}
             >
               <Typography
@@ -262,7 +260,7 @@ return (
                   fontSize: { xs: "3rem", lg: "4rem" },
                   fontWeight: "900",
                   textAlign: "center",
-                  pt: "2rem",
+                  p: "3rem",
                   color:"black"
                 }}
               >
@@ -270,6 +268,29 @@ return (
               </Typography>
 
               <Experience />
+            </Box>
+
+                     {/* Experience */}
+
+                     <Box
+              sx={{
+                width: "100%",
+                
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: { xs: "3rem", lg: "4rem" },
+                  fontWeight: "900",
+                  textAlign: "center",
+                  p: "3rem",
+                  color:"black"
+                }}
+              >
+                Education
+              </Typography>
+
+              <Education />
             </Box>
           </Box>
         </Box>

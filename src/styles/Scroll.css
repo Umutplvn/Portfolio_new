@@ -10,34 +10,26 @@ body {
 
   .connecting-line {
     position: absolute;
-    /* z-index: 0; */
-    top: 50%;
     left: 0;
     width: 4px;
     background-color: black;
-    transform: translateX(-34px) translateY(-15px);
+    transform: translateX(15px) translateY(-12px);
     transition: height 0.1s ease-out;
   }
   
 /* Progress Circle Styling */
 .progress {
   position: relative;
-  top: 40px;
-  width: 80px;
+  width: 40px;
   margin: 0;
   padding: 0;
 }
 
-.progress svg {
-  transform: translateX(-50px) rotate(-90deg);
-    /* overflow: hidden; */
-
-}
 
 circle {
   stroke-dashoffset: 0;
   stroke-width: 10px;
-  fill: none;  
+  fill: #EEEEEC;  
 }
 
 .bg {
@@ -67,7 +59,8 @@ circle {
 }
 .progress-container {
     position: relative;
-    top:0
+    top:0;
+    left:-1rem
   }
   
  

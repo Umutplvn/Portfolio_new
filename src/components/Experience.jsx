@@ -12,9 +12,16 @@ function Item({ children, isLastItem }) {
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
+
   return (
 
-      <div ref={ref} className="progress-container">
+      <motion.div ref={ref}
+      initial={{ opacity: 0, y: "3rem" }}
+      whileInView={{ opacity: 1, y: "0rem" }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+       className="progress-container">
+        
         <figure className="progress">
           <svg id="progress" width="35" height="35" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
@@ -51,15 +58,15 @@ function Item({ children, isLastItem }) {
             }}
           />
         {children}
-      </div>
+      </motion.div>
   );
 }
 
 export default function Experience() {
   return (
-    <Box sx={{ padding:{xs:"0 2rem", md:"0"}, display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
+    <Box sx={{ padding:{xs:"0 0 0 1rem", md:"0"}, display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
       <Item>
-        <Box sx={{ maxWidth: "40rem" }}>
+        <Box sx={{padding:"0 0 2rem 3rem",mt:"-40px", width:"100%", maxWidth:"40rem" }}>
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Full Stack Developer <strong style={{ color: "#B53D95" }}>@Gravitad</strong></Typography>
           <Typography sx={{ color: "#515151" }}>2024–Present | Dublin, Ireland</Typography>
           <Typography>
@@ -69,7 +76,8 @@ export default function Experience() {
       </Item>
 
       <Item>
-        <Box sx={{ maxWidth: "40rem" }}>
+                <Box sx={{padding:"0 0 2rem 3rem",mt:"-40px", width:"100%", maxWidth:"40rem" }}>
+
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Front Desk Associate <strong style={{ color: "#B53D95" }}>@MCR</strong></Typography>
           <Typography sx={{ color: "#515151" }}>Feb 2022–Present | Dublin, Ireland</Typography>
           <Typography>
@@ -79,7 +87,8 @@ export default function Experience() {
       </Item>
 
       <Item>
-        <Box sx={{ maxWidth: "40rem" }}>
+                <Box sx={{padding:"0 0 2rem 3rem",mt:"-40px", width:"100%", maxWidth:"40rem" }}>
+
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Full Stack Developer <strong style={{ color: "#B53D95" }}>@Freelance</strong></Typography>
           <Typography sx={{ color: "#515151" }}>Sep 2023–Sep 2024 | Dublin, Ireland</Typography>
           <Typography>
@@ -89,7 +98,8 @@ export default function Experience() {
       </Item>
 
       <Item>
-        <Box sx={{ maxWidth: "40rem" }}>
+                <Box sx={{padding:"0 0 2rem 3rem",mt:"-40px", width:"100%", maxWidth:"40rem" }}>
+
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Mechanical Service Engineer <strong style={{ color: "#B53D95" }}>@Bririm Makina</strong></Typography>
           <Typography sx={{ color: "#515151" }}>May 2019 – Jul 2021 | Izmir, Turkey</Typography>
           <Typography>
@@ -99,7 +109,8 @@ export default function Experience() {
       </Item>
 
       <Item isLastItem>
-        <Box sx={{ maxWidth: "40rem" }}>
+                <Box sx={{padding:"0 0 2rem 3rem",mt:"-40px", width:"100%", maxWidth:"40rem" }}>
+
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Production Engineering Specialist <strong style={{ color: "#B53D95" }}>@Elkon CCBP</strong></Typography>
           <Typography sx={{ color: "#515151" }}>Aug 2018–Apr 2019 | Tekirdag, Turkey</Typography>
           <Typography>
