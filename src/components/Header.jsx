@@ -257,7 +257,7 @@ const Header = () => {
           right: 0,
           backgroundColor: "rgba(42, 42, 40, 0.9)",
           transition: "top 0.9s ease-in-out",
-          zIndex: 0,
+          zIndex: 1,
           padding: "1rem",
           top: isOpen ? "5rem" : "-100%",
           borderBottom: "1px solid #bcbcbc",
