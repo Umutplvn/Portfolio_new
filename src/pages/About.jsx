@@ -127,7 +127,7 @@ return (
                 maxWidth: "35rem",
                 width: { xs: "100%", md: "40%", lg: "40%" },
                 padding: "1rem",
-                border: "2px solid black",
+                border: "1px solid black",
                 borderRadius: "1rem",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 display: { xs: "flex", lg: "none" },

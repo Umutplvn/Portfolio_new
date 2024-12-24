@@ -1,7 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import defi from "../assets/projects/defi.png"
+import defi from "../assets/projects/defi.png";
+import { FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router";
+
 const Projects = () => {
   const [inView, setInView] = useState(false);
   const countUpRef = useRef(null);
@@ -57,15 +60,121 @@ const Projects = () => {
           </Box>
         </section>
 
-<Box sx={{ padding:"2rem"}}>
-        <Box sx={{display:"flex", justifyContent:"center", flexWrap:"wrap", padding:"3rem", border:"3px solid black",                boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;", borderRadius:"1rem"
-}}>
-            <Box sx={{width:{xs:"100%", md:"50%"}, overflow:"hidden"}}>
-                <img src={defi} alt=""  style={{width:"100%"}}/>
+        {/* DEFI Project */}
+        <Box sx={{ padding: "2rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              padding: { xs: "1.5rem", sm: "3rem" },
+              border: "1px solid black",
+              boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
+              borderRadius: "1rem"
+            }}
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                overflow: "hidden",
+                borderRadius: "1rem",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "100%",
+                  cursor: "pointer",
+                  transition: "transform 0.3s ease-in-out",
+                  ":hover": { transform: "scale(1.1)" },
+                }}
+              >
+                <img src={defi} alt="" style={{ width: "100%", minHeight:"100%" }} />
+              </Box>
             </Box>
-        </Box>
 
-</Box>
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                display:"flex", flexDirection:"column",  justifyContent: "space-between" 
+            }}
+            >
+                <Box >
+
+              
+              <Typography
+                sx={{ color: "#b63e96", fontWeight: "500", fontSize: "1.1rem" }}
+              >
+                Fitness Application
+              </Typography>
+              <Typography
+                sx={{ fontWeight: "700", fontSize: "1.5rem", mb: "0.7rem" }}
+              >
+                DEFI
+              </Typography>
+              <Typography sx={{ mb: "0.5rem" }}>
+                A dynamic web app for personal trainers and clients, offering
+                customizable profiles, live chat, metric tracking, blogs, and
+                secure Stripe payments.
+              </Typography>
+              <Typography sx={{ color: "#646464" }}>
+                <strong>Powered By:</strong> Redux, JS, React, Stripe, and more.
+              </Typography>
+              </Box>
+              <Box
+                sx={{
+                  mt: "2rem",
+                  display: "flex",
+                  gap: "0.5rem",
+                  alignItems: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+
+                    fontSize: "2rem",
+                    color: "black",
+                    ":hover": {
+                      cursor: "pointer",
+                      transform: "scale(1.01)",
+                      transition: "transform 0.3s ease-in-out",
+                    },
+                  }}
+                  component="a"
+                  href="https://github.com/Umutplvn/Defi_Fitness_Client"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </Box>{" "}
+                <Box
+                  component="a"
+                  href="https://defifitness.netlify.app/"
+                  target="_blank"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    ":hover": {
+                      backgroundColor: "#181818",
+                      boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+                    },
+                    height: "2rem",
+                    textDecoration: "none",
+                    p: "0 0.5rem",
+                    borderRadius: "0.3rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                >
+                  Visit Project
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
