@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import responsiveImg from "../assets/responsive.webp";
 import bulb from "../assets/bulb.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const [hover, setHover] = useState(false);
