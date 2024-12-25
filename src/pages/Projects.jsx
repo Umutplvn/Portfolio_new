@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import defi from "../assets/projects/defi.png";
 import { FaGithub } from "react-icons/fa";
-import connectify from "../assets/projects/connectify.png";
+import connectify from "../assets/projects/connectifychat.png";
 import legere from "../assets/projects/legere.png";
 import stockapp from "../assets/projects/stockApp.png";
 import movieapp from "../assets/projects/movieapp.png";
@@ -82,11 +82,13 @@ const Projects = () => {
                     width: "100%",
                     cursor: "pointer",
                     transition: "transform 0.3s ease-in-out",
-                    ":hover": { transform: "scale(1.1)" },
+                    ":hover": { transform: "scale(1.3) translateY(0.3rem)" }, 
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                  }}
+                    transform: "scale(1.2) translateY(0.5rem)",                    
+
+                                    }}
                 >
                   <img
                     src={connectify}
@@ -139,10 +141,7 @@ const Projects = () => {
                   Connectify
                 </Typography>
                 <Typography sx={{ mb: "0.5rem" }}>
-                  Connectify is a social networking platform where users share
-                  photos and notes in a story format to engage in meaningful
-                  interactions. It helps individuals build real connections and
-                  share experiences online.
+                Connectify is a social platform where users share photos and notes in a story format to build meaningful connections and share experiences.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
                   <strong>Powered By:</strong> Redux, JS, React, Socketio, and
@@ -569,9 +568,11 @@ const Projects = () => {
                   Stock App
                 </Typography>
                 <Typography sx={{ mb: "0.5rem" }}>
-                  Financial management app for tracking income, expenses, and
-                  budgeting efficiently.
-                </Typography>
+                A financial management app to track income, expenses, and budgets, offering valuable insights for better financial control.
+
+
+
+</Typography>
                 <Typography sx={{ color: "#646464" }}>
                   <strong>Powered By:</strong> Redux, JS, React, and more.
                 </Typography>
