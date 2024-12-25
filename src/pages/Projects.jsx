@@ -12,6 +12,7 @@ import nbalegends from "../assets/projects/nbalegends.png";
 import howtosell from "../assets/projects/howtosell.png";
 import portfolio from "../assets/projects/portfolio1.png";
 import githublogo from "../assets/projects/github.png";
+import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
   const [transform, setTransform] = useState(false);
@@ -22,6 +23,43 @@ const Projects = () => {
     }, 400);
   }, []);
 
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: true, 
+    threshold: 0.2,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref4, inView: inView4 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref5, inView: inView5 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref6, inView: inView6 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref7, inView: inView7 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ref8, inView: inView8 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  
+  const { ref: ref9, inView: inView9 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   
 
   return (
@@ -49,7 +87,7 @@ const Projects = () => {
                 pb: { xs: "0", md: "2rem", lg: "4rem" },
                 lineHeight: "4rem",
                 width: { xs: "100%", sm: "500px", md: "100%" },
-                transform: transform ? "translateY(-1rem)" : "translateY(0)",
+                transform: transform ? "translateY(-0.5rem)" : "translateY(0)",
                 color: transform ? "black" : "#EEEEEC",
                 transition: "transform 1s ease-in-out, color 1s ease-in-out",
               }}
@@ -61,10 +99,10 @@ const Projects = () => {
 
         {/* 1st Part - Connectify Project */}
         <Box
+        ref={ref1}
         sx={{ padding: "2rem" }}>
           <Box
             sx={{
-          
               display: "flex",
               justifyContent: "center",
               flexWrap: "wrap",
@@ -72,6 +110,9 @@ const Projects = () => {
               border: "1px solid black",
               boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
               borderRadius: "1rem",
+              opacity: inView1 ? 1 : 0,
+              transform: inView1 ? "translateY(0)" : "translateY(1rem)",
+              transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
             }}
           >
             <Box
@@ -212,9 +253,13 @@ const Projects = () => {
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
           {/* How to Sell */}
           <Box
+          ref={ref2}
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
               width: { xs: "100%", md: "50%" },
+              opacity: inView2 ? 1 : 0,
+              transform: inView2 ? "translateY(0)" : "translateY(1rem)",
+              transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
             }}
           >
             <Box
@@ -350,9 +395,13 @@ const Projects = () => {
 
           {/* Movie App */}
           <Box
+          ref={ref3}
             sx={{
               padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
               width: { xs: "100%", md: "50%" },
+              opacity: inView3 ? 1 : 0,
+              transform: inView3 ? "translateY(0)" : "translateY(1rem)",
+              transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
             }}
           >
             <Box
@@ -491,8 +540,15 @@ const Projects = () => {
         </Box>
 
         {/* 3th Part - Stock App */}
-        <Box sx={{ padding: "2rem" }}>
+        <Box 
+        ref={ref4}
+        sx={{ padding: "2rem",
+        opacity: inView4 ? 1 : 0,
+        transform: inView4 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
+        }}>
           <Box
+          
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -641,9 +697,13 @@ const Projects = () => {
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
           {/* Legere */}
           <Box
+          ref={ref5}
+
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
-
+              opacity: inView5 ? 1 : 0,
+        transform: inView5 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
               width: { xs: "100%", md: "50%" },
             }}
           >
@@ -781,10 +841,14 @@ const Projects = () => {
 
           {/* NBA Legends */}
           <Box
+          ref={ref6}
             sx={{
               padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
 
               width: { xs: "100%", md: "50%" },
+              opacity: inView6 ? 1 : 0,
+        transform: inView6 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
             }}
           >
             <Box
@@ -924,7 +988,14 @@ const Projects = () => {
         </Box>
 
         {/* 5th Part - DEFI Project */}
-        <Box sx={{ padding: "2rem" }}>
+        <Box
+        ref={ref7}
+
+        sx={{ padding: "2rem",
+        opacity: inView7 ? 1 : 0,
+        transform: inView7 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
+        }}>
           <Box
             sx={{
               display: "flex",
@@ -1074,9 +1145,14 @@ const Projects = () => {
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
           {/* Portfolio */}
           <Box
+          ref={ref8}
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
-              width: { xs: "100%", md: "50%" },
+              width: { xs: "100%", md: "50%",
+              opacity: inView8 ? 1 : 0,
+        transform: inView8 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
+            },
             }}
           >
             <Box
@@ -1212,9 +1288,13 @@ const Projects = () => {
 
           {/* Github Profile */}
           <Box
+          ref={ref9}
             sx={{
               padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
               width: { xs: "100%", md: "50%" },
+              opacity: inView9 ? 1 : 0,
+              transform: inView9 ? "translateY(0)" : "translateY(1rem)",
+              transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
             }}
           >
             <Box
