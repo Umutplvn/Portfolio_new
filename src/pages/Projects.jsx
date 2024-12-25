@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Link } from "react-router";
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
@@ -22,6 +22,8 @@ const Projects = () => {
     }, 400);
   }, []);
 
+  
+
   return (
     <Box
       sx={{
@@ -34,6 +36,7 @@ const Projects = () => {
       <Box sx={{ maxWidth: "1200px", m: "auto" }}>
         <section>
           <Box
+          
             sx={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <Typography
@@ -57,9 +60,11 @@ const Projects = () => {
         </section>
 
         {/* 1st Part - Connectify Project */}
-        <Box sx={{ padding: "2rem" }}>
+        <Box
+        sx={{ padding: "2rem" }}>
           <Box
             sx={{
+          
               display: "flex",
               justifyContent: "center",
               flexWrap: "wrap",
