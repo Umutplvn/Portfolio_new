@@ -153,7 +153,7 @@ const Projects = () => {
                 sx={{
                   mt: "2rem",
                   display: "flex",
-                  gap: "0.5rem",
+                  gap: "1rem",
                   alignItems: "center",
                 }}
               >
@@ -217,7 +217,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -257,7 +257,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -294,13 +294,32 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+         
+                  <Typography
+                    component="a"
+                    href="https://howtosell.io/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -320,24 +339,6 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://howtosell.io/"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
                 </Box>
               </Box>
             </Box>
@@ -354,7 +355,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -397,7 +398,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -434,13 +435,32 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+          
+                  <Typography
+                    component="a"
+                    href="https://movie-web-app-umut.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -460,24 +480,6 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://movie-web-app-umut.netlify.app/"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
                 </Box>
               </Box>
             </Box>
@@ -578,7 +580,7 @@ const Projects = () => {
                 sx={{
                   mt: "2rem",
                   display: "flex",
-                  gap: "0.5rem",
+                  gap: "1rem",
                   alignItems: "center",
                 }}
               >
@@ -643,7 +645,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -684,7 +686,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -721,13 +723,32 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+           
+                  <Typography
+                    component="a"
+                    href="https://legere.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -747,24 +768,6 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://legere.netlify.app/"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
                 </Box>
               </Box>
             </Box>
@@ -782,7 +785,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -826,7 +829,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -863,13 +866,32 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+             
+                  <Typography
+                    component="a"
+                    href="https://nba-legends-umut.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -889,24 +911,6 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://nba-legends-umut.netlify.app/"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
                 </Box>
               </Box>
             </Box>
@@ -1009,7 +1013,7 @@ const Projects = () => {
                 sx={{
                   mt: "2rem",
                   display: "flex",
-                  gap: "0.5rem",
+                  gap: "1rem",
                   alignItems: "center",
                 }}
               >
@@ -1073,7 +1077,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -1113,7 +1117,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -1150,13 +1154,31 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+                             <Typography
+                    component="a"
+                    href="https://portfolio-umut.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -1176,24 +1198,7 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://portfolio-umut.netlify.app/"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
+       
                 </Box>
               </Box>
             </Box>
@@ -1210,7 +1215,7 @@ const Projects = () => {
               sx={{
                 justifyContent: "center",
                 flexWrap: "wrap",
-                padding: { xs: "1.5rem", sm: "3rem" },
+                padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
                 border: "1px solid black",
                 boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
                 borderRadius: "1rem",
@@ -1250,7 +1255,7 @@ const Projects = () => {
               <Box
                 sx={{
                   width: "100%",
-                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -1287,13 +1292,32 @@ const Projects = () => {
                 </Box>
                 <Box
                   sx={{
-                    mt: "2rem",
+                    mt: "1rem",
                     display: "flex",
                     gap: "0.5rem",
                     alignItems: "center",
                     justifyContent: "space-between",
                   }}
                 >
+       
+                  <Typography
+                    component="a"
+                    href="https://github.com/Umutplvn"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
                   <Box
                     sx={{
                       display: "flex",
@@ -1313,24 +1337,6 @@ const Projects = () => {
                   >
                     <FaGithub />
                   </Box>{" "}
-                  <Typography
-                    component="a"
-                    href="https://github.com/Umutplvn"
-                    target="_blank"
-                    sx={{
-                      textDecoration: "none",
-                      fontWeight: "500",
-                      fontSize: "1.1rem",
-                      ":hover": {
-                        textDecoration: "underline",
-                        cursor: "pointer",
-                      },
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Visit
-                  </Typography>
                 </Box>
               </Box>
             </Box>
