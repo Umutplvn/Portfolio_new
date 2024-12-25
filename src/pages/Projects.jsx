@@ -9,6 +9,9 @@ import legere from "../assets/projects/legere.png";
 import stockapp from "../assets/projects/stockApp.png";
 import movieapp from "../assets/projects/movieapp.png";
 import nbalegends from "../assets/projects/nbalegends.png";
+import howtosell from "../assets/projects/howtosell.png";
+import portfolio from "../assets/projects/portfolio1.png";
+import githublogo from "../assets/projects/github.png";
 
 const Projects = () => {
   const [transform, setTransform] = useState(false);
@@ -53,7 +56,7 @@ const Projects = () => {
           </Box>
         </section>
 
-        {/* 1st Part - DEFI Project */}
+        {/* 1st Part - Connectify Project */}
         <Box sx={{ padding: "2rem" }}>
           <Box
             sx={{
@@ -73,7 +76,7 @@ const Projects = () => {
                 borderRadius: "1rem",
               }}
             >
-              <Link to="https://defifitness.netlify.app/" target="_blank">
+              <Link to="https://connectify-umut.netlify.app" target="_blank">
                 <Box
                   sx={{
                     width: "100%",
@@ -86,7 +89,7 @@ const Projects = () => {
                   }}
                 >
                   <img
-                    src={defi}
+                    src={connectify}
                     alt="Fitness App"
                     style={{
                       width: "100%",
@@ -115,7 +118,7 @@ const Projects = () => {
                     fontSize: "1.1rem",
                   }}
                 >
-                  Fitness Application
+                  Social Media Platform
                 </Typography>
                 <Typography
                   sx={{
@@ -130,18 +133,19 @@ const Projects = () => {
                     textDecoration: "none",
                   }}
                   component="a"
-                  href="https://defifitness.netlify.app/"
+                  href="https://connectify-umut.netlify.app"
                   target="_blank"
                 >
-                  Defi
+                  Connectify
                 </Typography>
                 <Typography sx={{ mb: "0.5rem" }}>
-                  A dynamic web app for personal trainers and clients, offering
-                  customizable profiles, live chat, metric tracking, blogs, and
-                  secure Stripe payments.
+                  Connectify is a social networking platform where users share
+                  photos and notes in a story format to engage in meaningful
+                  interactions. It helps individuals build real connections and
+                  share experiences online.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, Stripe, and
+                  <strong>Powered By:</strong> Redux, JS, React, Socketio, and
                   more.
                 </Typography>
               </Box>
@@ -167,14 +171,14 @@ const Projects = () => {
                     },
                   }}
                   component="a"
-                  href="https://github.com/Umutplvn/Defi_Fitness_Client"
+                  href="https://github.com/Umutplvn/connectify_frontend"
                   target="_blank"
                 >
                   <FaGithub />
                 </Box>{" "}
                 <Box
                   component="a"
-                  href="https://defifitness.netlify.app/"
+                  href="https://connectify-umut.netlify.app"
                   target="_blank"
                   sx={{
                     backgroundColor: "black",
@@ -200,10 +204,9 @@ const Projects = () => {
           </Box>
         </Box>
 
-        {/*2nd Part - Connectify - Legere */}
-
+        {/*2nd Part - HowtoSell - MovieApp */}
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
-          {/* Connectify */}
+          {/* How to Sell */}
           <Box
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
@@ -227,7 +230,7 @@ const Projects = () => {
                   borderRadius: "1rem",
                 }}
               >
-                <Link to="https://connectify-umut.netlify.app/" target="_blank">
+                <Link to="https://howtosell.io/" target="_blank">
                   <Box
                     sx={{
                       backgroundColor: "white",
@@ -241,7 +244,7 @@ const Projects = () => {
                     }}
                   >
                     <img
-                      src={connectify}
+                      src={howtosell}
                       alt=""
                       style={{
                         width: "100%",
@@ -268,7 +271,7 @@ const Projects = () => {
                       fontSize: "1.1rem",
                     }}
                   >
-                    Chatting Platform
+                    Sales Coaching Platform
                   </Typography>
                   <Typography
                     sx={{
@@ -283,10 +286,10 @@ const Projects = () => {
                       textDecoration: "none",
                     }}
                     component="a"
-                    href="https://connectify-umut.netlify.app/"
+                    href="https://howtosell.io/"
                     target="_blank"
                   >
-                    Connectify
+                    How To Sell
                   </Typography>
                 </Box>
                 <Box
@@ -312,14 +315,14 @@ const Projects = () => {
                       },
                     }}
                     component="a"
-                    href="https://github.com/Umutplvn/Connectify_Chat_Client"
+                    href="https://github.com/Umutplvn/howtosell_client"
                     target="_blank"
                   >
                     <FaGithub />
                   </Box>{" "}
                   <Typography
                     component="a"
-                    href="https://connectify-umut.netlify.app/"
+                    href="https://howtosell.io/"
                     target="_blank"
                     sx={{
                       textDecoration: "none",
@@ -340,11 +343,10 @@ const Projects = () => {
             </Box>
           </Box>
 
-          {/* Legere */}
+          {/* Movie App */}
           <Box
             sx={{
               padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
-
               width: { xs: "100%", md: "50%" },
             }}
           >
@@ -365,25 +367,27 @@ const Projects = () => {
                   borderRadius: "1rem",
                 }}
               >
-                <Link to="https://legere.netlify.app/" target="_blank">
+                <Link
+                  to="https://movie-web-app-umut.netlify.app/"
+                  target="_blank"
+                >
                   <Box
                     sx={{
                       backgroundColor: "white",
+                      width: "100%",
                       cursor: "pointer",
                       transition: "transform 0.3s ease-in-out",
                       ":hover": { transform: "scale(1.1)" },
                       display: "flex",
+                      alignItems: "center",
                       justifyContent: "center",
-                      overflow: "hidden", // Görselin kutuyu aşmaması için
                     }}
                   >
                     <img
-                      src={legere}
-                      alt="Responsive"
+                      src={movieapp}
+                      alt=""
                       style={{
                         width: "100%",
-
-                        objectFit: "cover", // Görselin kutuyu doldurması için
                       }}
                     />
                   </Box>
@@ -407,7 +411,7 @@ const Projects = () => {
                       fontSize: "1.1rem",
                     }}
                   >
-                    Blogging Platform
+                    Video Streaming Platform
                   </Typography>
                   <Typography
                     sx={{
@@ -422,10 +426,10 @@ const Projects = () => {
                       textDecoration: "none",
                     }}
                     component="a"
-                    href="https://legere.netlify.app/"
+                    href="https://movie-web-app-umut.netlify.app/"
                     target="_blank"
                   >
-                    Legere
+                    Movie App
                   </Typography>
                 </Box>
                 <Box
@@ -451,14 +455,14 @@ const Projects = () => {
                       },
                     }}
                     component="a"
-                    href="https://github.com/Umutplvn/Legere_BlogApp_V3_Client"
+                    href="https://github.com/Umutplvn/Movie_Web_APP"
                     target="_blank"
                   >
                     <FaGithub />
                   </Box>{" "}
                   <Typography
                     component="a"
-                    href="https://legere.netlify.app/"
+                    href="https://movie-web-app-umut.netlify.app/"
                     target="_blank"
                     sx={{
                       textDecoration: "none",
@@ -625,12 +629,13 @@ const Projects = () => {
           </Box>
         </Box>
 
-        {/* 4th Part Movie App - NBA Legends */}
+        {/* 4th Part Legere - NBA Legends */}
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
-          {/* Movie App */}
+          {/* Legere */}
           <Box
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
+
               width: { xs: "100%", md: "50%" },
             }}
           >
@@ -651,27 +656,25 @@ const Projects = () => {
                   borderRadius: "1rem",
                 }}
               >
-                <Link
-                  to="https://movie-web-app-umut.netlify.app/"
-                  target="_blank"
-                >
+                <Link to="https://legere.netlify.app/" target="_blank">
                   <Box
                     sx={{
                       backgroundColor: "white",
-                      width: "100%",
                       cursor: "pointer",
                       transition: "transform 0.3s ease-in-out",
                       ":hover": { transform: "scale(1.1)" },
                       display: "flex",
-                      alignItems: "center",
                       justifyContent: "center",
+                      overflow: "hidden",
                     }}
                   >
                     <img
-                      src={movieapp}
-                      alt=""
+                      src={legere}
+                      alt="Responsive"
                       style={{
                         width: "100%",
+
+                        objectFit: "cover",
                       }}
                     />
                   </Box>
@@ -695,7 +698,7 @@ const Projects = () => {
                       fontSize: "1.1rem",
                     }}
                   >
-                    Video Streaming Platform
+                    Blogging Platform
                   </Typography>
                   <Typography
                     sx={{
@@ -710,10 +713,10 @@ const Projects = () => {
                       textDecoration: "none",
                     }}
                     component="a"
-                    href="https://movie-web-app-umut.netlify.app/"
+                    href="https://legere.netlify.app/"
                     target="_blank"
                   >
-                    Movie App
+                    Legere
                   </Typography>
                 </Box>
                 <Box
@@ -739,14 +742,14 @@ const Projects = () => {
                       },
                     }}
                     component="a"
-                    href="https://github.com/Umutplvn/Movie_Web_APP"
+                    href="https://github.com/Umutplvn/Legere_BlogApp_V3_Client"
                     target="_blank"
                   >
                     <FaGithub />
                   </Box>{" "}
                   <Typography
                     component="a"
-                    href="https://movie-web-app-umut.netlify.app/"
+                    href="https://legere.netlify.app/"
                     target="_blank"
                     sx={{
                       textDecoration: "none",
@@ -792,7 +795,10 @@ const Projects = () => {
                   borderRadius: "1rem",
                 }}
               >
-                <Link to="https://nba-legends-umut.netlify.app/" target="_blank">
+                <Link
+                  to="https://nba-legends-umut.netlify.app/"
+                  target="_blank"
+                >
                   <Box
                     sx={{
                       backgroundColor: "white",
@@ -886,6 +892,430 @@ const Projects = () => {
                   <Typography
                     component="a"
                     href="https://nba-legends-umut.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+
+        {/* 5th Part - DEFI Project */}
+        <Box sx={{ padding: "2rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              padding: { xs: "1.5rem", sm: "3rem" },
+              border: "1px solid black",
+              boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
+              borderRadius: "1rem",
+            }}
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                overflow: "hidden",
+                borderRadius: "1rem",
+              }}
+            >
+              <Link to="https://defifitness.netlify.app/" target="_blank">
+                <Box
+                  sx={{
+                    width: "100%",
+                    cursor: "pointer",
+                    transition: "transform 0.3s ease-in-out",
+                    ":hover": { transform: "scale(1.1)" },
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={defi}
+                    alt="Fitness App"
+                    style={{
+                      width: "100%",
+                      borderRadius: "1rem",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Box>
+              </Link>
+            </Box>
+
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                padding: { xs: "1rem 0", md: "0 0 0.5rem 1rem" },
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Box>
+                <Typography
+                  sx={{
+                    color: "#b63e96",
+                    fontWeight: "500",
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  Fitness Application
+                </Typography>
+                <Typography
+                  sx={{
+                    fontWeight: "700",
+                    fontSize: "1.5rem",
+                    mb: "0.7rem",
+                    ":hover": {
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    },
+                    color: "black",
+                    textDecoration: "none",
+                  }}
+                  component="a"
+                  href="https://defifitness.netlify.app/"
+                  target="_blank"
+                >
+                  Defi
+                </Typography>
+                <Typography sx={{ mb: "0.5rem" }}>
+                  A dynamic web app for personal trainers and clients, offering
+                  customizable profiles, live chat, metric tracking, blogs, and
+                  secure Stripe payments.
+                </Typography>
+                <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> Redux, JS, React, Stripe, and
+                  more.
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  mt: "2rem",
+                  display: "flex",
+                  gap: "0.5rem",
+                  alignItems: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+
+                    fontSize: "2rem",
+                    color: "black",
+                    ":hover": {
+                      cursor: "pointer",
+                      transform: "scale(1.01)",
+                      transition: "transform 0.3s ease-in-out",
+                    },
+                  }}
+                  component="a"
+                  href="https://github.com/Umutplvn/Defi_Fitness_Client"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </Box>{" "}
+                <Box
+                  component="a"
+                  href="https://defifitness.netlify.app/"
+                  target="_blank"
+                  sx={{
+                    backgroundColor: "black",
+                    color: "white",
+                    ":hover": {
+                      backgroundColor: "#181818",
+                      boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+                    },
+                    height: "2rem",
+                    textDecoration: "none",
+                    p: "0 0.5rem",
+                    borderRadius: "0.3rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                >
+                  Visit Project
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+
+        {/* 6th Part Portfolio-  Github Profile */}
+        <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
+          {/* Portfolio */}
+          <Box
+            sx={{
+              padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
+              width: { xs: "100%", md: "50%" },
+            }}
+          >
+            <Box
+              sx={{
+                justifyContent: "center",
+                flexWrap: "wrap",
+                padding: { xs: "1.5rem", sm: "3rem" },
+                border: "1px solid black",
+                boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
+                borderRadius: "1rem",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "100%",
+                  overflow: "hidden",
+                  borderRadius: "1rem",
+                }}
+              >
+                <Link to="https://portfolio-umut.netlify.app/" target="_blank">
+                  <Box
+                    sx={{
+                      backgroundColor: "white",
+                      width: "100%",
+                      cursor: "pointer",
+                      transition: "transform 0.3s ease-in-out",
+                      ":hover": { transform: "scale(1.1)" },
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      src={portfolio}
+                      alt=""
+                      style={{
+                        width: "100%",
+                      }}
+                    />
+                  </Box>
+                </Link>
+              </Box>
+
+              <Box
+                sx={{
+                  width: "100%",
+                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box>
+                  <Typography
+                    sx={{
+                      color: "#b63e96",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    Showcase Website
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: "700",
+                      fontSize: "1.5rem",
+                      mb: "0.7rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                    component="a"
+                    href="https://portfolio-umut.netlify.app/"
+                    target="_blank"
+                  >
+                    Portfolio
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    mt: "2rem",
+                    display: "flex",
+                    gap: "0.5rem",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+
+                      fontSize: "2rem",
+                      color: "black",
+                      ":hover": {
+                        cursor: "pointer",
+                        transform: "scale(1.01)",
+                        transition: "transform 0.3s ease-in-out",
+                      },
+                    }}
+                    component="a"
+                    href="https://github.com/Umutplvn/Portfoilo_Client"
+                    target="_blank"
+                  >
+                    <FaGithub />
+                  </Box>{" "}
+                  <Typography
+                    component="a"
+                    href="https://portfolio-umut.netlify.app/"
+                    target="_blank"
+                    sx={{
+                      textDecoration: "none",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Visit
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+
+          {/* Github Profile */}
+          <Box
+            sx={{
+              padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
+              width: { xs: "100%", md: "50%" },
+            }}
+          >
+            <Box
+              sx={{
+                justifyContent: "center",
+                flexWrap: "wrap",
+                padding: { xs: "1.5rem", sm: "3rem" },
+                border: "1px solid black",
+                boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
+                borderRadius: "1rem",
+              }}
+            >
+              <Box
+                sx={{
+                  width: "100%",
+                  overflow: "hidden",
+                  borderRadius: "1rem",
+                }}
+              >
+                <Link to="https://github.com/Umutplvn" target="_blank">
+                  <Box
+                    sx={{
+                      backgroundColor: "white",
+                      width: "100%",
+                      cursor: "pointer",
+                      transition: "transform 0.3s ease-in-out",
+                      ":hover": { transform: "scale(1.1)" },
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      src={githublogo}
+                      alt=""
+                      style={{
+                        width: "100%",
+                      }}
+                    />
+                  </Box>
+                </Link>
+              </Box>
+
+              <Box
+                sx={{
+                  width: "100%",
+                  padding: { xs: "1rem 0", sm: "0 0 0.5rem 1rem" },
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Box>
+                  <Typography
+                    sx={{
+                      color: "#b63e96",
+                      fontWeight: "500",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    <br />
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: "700",
+                      fontSize: "1.5rem",
+                      mb: "0.7rem",
+                      ":hover": {
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      },
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                    component="a"
+                    href="https://github.com/Umutplvn"
+                    target="_blank"
+                  >
+                    Github Profile
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    mt: "2rem",
+                    display: "flex",
+                    gap: "0.5rem",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+
+                      fontSize: "2rem",
+                      color: "black",
+                      ":hover": {
+                        cursor: "pointer",
+                        transform: "scale(1.01)",
+                        transition: "transform 0.3s ease-in-out",
+                      },
+                    }}
+                    component="a"
+                    href="https://github.com/Umutplvn"
+                    target="_blank"
+                  >
+                    <FaGithub />
+                  </Box>{" "}
+                  <Typography
+                    component="a"
+                    href="https://github.com/Umutplvn"
                     target="_blank"
                     sx={{
                       textDecoration: "none",
