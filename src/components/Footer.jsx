@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { RxLinkedinLogo } from "react-icons/rx";
-import { MdContactMail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 
 const Footer = () => {
@@ -61,7 +61,7 @@ const Footer = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
+            alignItems:"center",
             gap: "0.7rem",
             width: { xs: "100%", sm: "7rem" },
           }}
@@ -70,6 +70,9 @@ const Footer = () => {
             sx={{
               fontSize: "1.7rem",
               color: "black",
+              display: "flex",
+              justifyContent: "center",
+              alignItems:"bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",
@@ -87,6 +90,9 @@ const Footer = () => {
             sx={{
               fontSize: "1.7rem",
               color: "#0B65C2",
+              display: "flex",
+              justifyContent: "center",
+              alignItems:"bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",
@@ -97,13 +103,16 @@ const Footer = () => {
             target="_blank"
             href="https://www.linkedin.com/in/umut-pehlivan-817b28174/"
           >
-            <RxLinkedinLogo />
+            <FaLinkedin />
           </Box>
 
           <Box
             sx={{
               fontSize: "1.7rem",
-              color: "#E24134",
+              color: "#d33f35",
+              display: "flex",
+              justifyContent: "center",
+              alignItems:"bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",
@@ -114,7 +123,7 @@ const Footer = () => {
             target="_blank"
             href="mailto:umutpehlivan2078@gmail.com"
           >
-            <MdContactMail />
+            <FaMailBulk />
           </Box>
         </Box>
       </Box>
