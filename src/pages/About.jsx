@@ -174,7 +174,7 @@ return (
               >
                 Hi, I'm <strong>Umut</strong>, a web developer with a passion
                 for creating beautiful, functional, and user-centered digital
-                experiences. With +2 years of experience in the field. I am
+                experiences. With +3 years of experience in the field. I am
                 always looking for new and innovative ways to bring my clients'
                 visions to life. <br /> <br /> I believe that design is about
                 more than just making things look pretty – it's about solving
