@@ -5,6 +5,7 @@ import CountUpPage from "../components/CountUp";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
+import PageTransition from "../components/PageTransition";
 
 const About = () => {
   const [inView, setInView] = useState(false);
@@ -74,6 +75,7 @@ const About = () => {
 
 return (
     <body>
+      <PageTransition/>
       <Box
         sx={{
           backgroundColor: "#EEEEEC",

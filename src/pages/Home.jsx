@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import responsiveImg from "../assets/responsive.webp";
 import bulb from "../assets/bulb.svg";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import PageTransition from "../components/PageTransition";
+
 
 const Home = () => {
   const [hover, setHover] = useState(false);
@@ -23,7 +25,8 @@ const Home = () => {
   }, []);
 
   return (
-    <body>
+    <>
+      <PageTransition/>
       <Box
         sx={{
           backgroundColor: "#EEEEEC",
@@ -192,7 +195,7 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-    </body>
+    </>
   );
 };
 

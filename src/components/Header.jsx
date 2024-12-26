@@ -23,6 +23,7 @@ const Header = () => {
     }
   }, []);
 
+
   const handleLinkClick = (e) => {
     setOpen(false);
     setInnerText(e.target.innerText);

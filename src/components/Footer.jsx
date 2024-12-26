@@ -14,8 +14,6 @@ const Footer = () => {
         borderTop: "2px solid black",
         width: "100%",
         minHeight: "10vh",
-        // position:"fixed",
-        // bottom:0
       }}
     >
       <Box

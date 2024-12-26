@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import defi from "../assets/projects/defi.png";
 import { FaGithub } from "react-icons/fa";
@@ -13,6 +13,7 @@ import howtosell from "../assets/projects/howtosell.png";
 import portfolio from "../assets/projects/portfolio1.png";
 import githublogo from "../assets/projects/github.png";
 import { useInView } from 'react-intersection-observer';
+import PageTransition from "../components/PageTransition";
 
 const Projects = () => {
   const [transform, setTransform] = useState(false);
@@ -63,7 +64,9 @@ const Projects = () => {
   
 
   return (
-    <Box
+<body>
+<PageTransition/>
+<Box
       sx={{
         backgroundColor: "#EEEEEC",
         width: "100vw",
@@ -1429,7 +1432,7 @@ const Projects = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </Box></body>
   );
 };
 
