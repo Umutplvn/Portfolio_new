@@ -98,23 +98,25 @@ const Projects = () => {
 Projects & Solutions         </Typography>
           </Box>
         </section>
-
-        {/* 1st Part - Connectify Project */}
-        <Box
+      {/* 1st Part - DEFI Project */}
+      <Box
         ref={ref1}
-        sx={{ padding: "2rem" }}>
+
+        sx={{ padding: "2rem",
+        opacity: inView1 ? 1 : 0,
+        transform: inView1 ? "translateY(0)" : "translateY(1rem)",
+        transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
+        }}>
           <Box
             sx={{
               display: "flex",
               justifyContent: "center",
               flexWrap: "wrap",
+              
               padding: { xs: "1.5rem", sm: "3rem" },
               border: "1px solid black",
               boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
               borderRadius: "1rem",
-              opacity: inView1 ? 1 : 0,
-              transform: inView1 ? "translateY(0)" : "translateY(1rem)",
-              transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
             }}
           >
             <Box
@@ -124,22 +126,21 @@ Projects & Solutions         </Typography>
                 borderRadius: "1rem",
               }}
             >
-              <Link to="https://connectify-umut.netlify.app" target="_blank">
+              <Link to="https://defifitness.netlify.app/" target="_blank">
                 <Box
                   sx={{
                     width: "100%",
                     cursor: "pointer",
+                    transform: "scale(1.03)",
                     transition: "transform 0.3s ease-in-out",
-                    ":hover": { transform: "scale(1.3) translateY(0.3rem)" }, 
+                    ":hover": { transform: "scale(1.1)" },
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    transform: "scale(1.2) translateY(0.5rem)",                    
-
-                                    }}
+                  }}
                 >
                   <img
-                    src={connectify}
+                    src={defi}
                     alt="Fitness App"
                     style={{
                       width: "100%",
@@ -168,7 +169,7 @@ Projects & Solutions         </Typography>
                     fontSize: "1.1rem",
                   }}
                 >
-                  Social Media Platform
+                  Fitness Application
                 </Typography>
                 <Typography
                   sx={{
@@ -183,16 +184,18 @@ Projects & Solutions         </Typography>
                     textDecoration: "none",
                   }}
                   component="a"
-                  href="https://connectify-umut.netlify.app"
+                  href="https://defifitness.netlify.app/"
                   target="_blank"
                 >
-                  Connectify
+                  Defi
                 </Typography>
                 <Typography sx={{ mb: "0.5rem" }}>
-                Connectify is a social platform where users share photos and notes in a story format to build meaningful connections and share experiences.
+                  A dynamic web app for personal trainers and clients, offering
+                  customizable profiles, live chat, metric tracking, blogs, and
+                  secure Stripe payments.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, Socketio, MongoDb, Express, Node.js, MUI and
+                  <strong>Powered By:</strong> Redux, JS, React, Stripe, MUI, Socketio, Node.js, MongoDB, Express and
                   more.
                 </Typography>
               </Box>
@@ -218,14 +221,14 @@ Projects & Solutions         </Typography>
                     },
                   }}
                   component="a"
-                  href="https://github.com/Umutplvn/connectify_frontend"
+                  href="https://github.com/Umutplvn/Defi_Fitness_Client"
                   target="_blank"
                 >
                   <FaGithub />
                 </Box>{" "}
                 <Box
                   component="a"
-                  href="https://connectify-umut.netlify.app"
+                  href="https://defifitness.netlify.app/"
                   target="_blank"
                   sx={{
                     backgroundColor: "black",
@@ -250,6 +253,8 @@ Projects & Solutions         </Typography>
             </Box>
           </Box>
         </Box>
+
+    
 
         {/*2nd Part - HowtoSell - MovieApp */}
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
@@ -745,6 +750,7 @@ Projects & Solutions         </Typography>
                       display: "flex",
                       justifyContent: "center",
                       overflow: "hidden",
+
                     }}
                   >
                     <img
@@ -1006,16 +1012,10 @@ Projects & Solutions         </Typography>
             </Box>
           </Box>
         </Box>
-
-        {/* 5th Part - DEFI Project */}
-        <Box
+    {/* 5th Part - Connectify Project */}
+    <Box
         ref={ref7}
-
-        sx={{ padding: "2rem",
-        opacity: inView7 ? 1 : 0,
-        transform: inView7 ? "translateY(0)" : "translateY(1rem)",
-        transition: "opacity 1s ease-in-out, transform 1s ease-in-out"
-        }}>
+        sx={{ padding: "2rem" }}>
           <Box
             sx={{
               display: "flex",
@@ -1025,6 +1025,9 @@ Projects & Solutions         </Typography>
               border: "1px solid black",
               boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
               borderRadius: "1rem",
+              opacity: inView7 ? 1 : 0,
+              transform: inView7 ? "translateY(0)" : "translateY(1rem)",
+              transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
             }}
           >
             <Box
@@ -1034,20 +1037,23 @@ Projects & Solutions         </Typography>
                 borderRadius: "1rem",
               }}
             >
-              <Link to="https://defifitness.netlify.app/" target="_blank">
+              <Link to="https://connectify-umut.netlify.app" target="_blank">
                 <Box
                   sx={{
                     width: "100%",
                     cursor: "pointer",
+                
                     transition: "transform 0.3s ease-in-out",
-                    ":hover": { transform: "scale(1.1)" },
+                    ":hover": { transform: "scale(1.3) translateY(0.3rem)" }, 
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                  }}
+                    transform: "scale(1.2) translateY(0.5rem)",                    
+
+                                    }}
                 >
                   <img
-                    src={defi}
+                    src={connectify}
                     alt="Fitness App"
                     style={{
                       width: "100%",
@@ -1076,7 +1082,7 @@ Projects & Solutions         </Typography>
                     fontSize: "1.1rem",
                   }}
                 >
-                  Fitness Application
+                  Social Media Platform
                 </Typography>
                 <Typography
                   sx={{
@@ -1091,18 +1097,16 @@ Projects & Solutions         </Typography>
                     textDecoration: "none",
                   }}
                   component="a"
-                  href="https://defifitness.netlify.app/"
+                  href="https://connectify-umut.netlify.app"
                   target="_blank"
                 >
-                  Defi
+                  Connectify
                 </Typography>
                 <Typography sx={{ mb: "0.5rem" }}>
-                  A dynamic web app for personal trainers and clients, offering
-                  customizable profiles, live chat, metric tracking, blogs, and
-                  secure Stripe payments.
+                Connectify is a social platform where users share photos and notes in a story format to build meaningful connections and share experiences.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, Stripe, MUI, Socketio, Node.js, MongoDB, Express and
+                  <strong>Powered By:</strong> Redux, JS, React, Socketio, MongoDb, Express, Node.js, MUI and
                   more.
                 </Typography>
               </Box>
@@ -1128,14 +1132,14 @@ Projects & Solutions         </Typography>
                     },
                   }}
                   component="a"
-                  href="https://github.com/Umutplvn/Defi_Fitness_Client"
+                  href="https://github.com/Umutplvn/connectify_frontend"
                   target="_blank"
                 >
                   <FaGithub />
                 </Box>{" "}
                 <Box
                   component="a"
-                  href="https://defifitness.netlify.app/"
+                  href="https://connectify-umut.netlify.app"
                   target="_blank"
                   sx={{
                     backgroundColor: "black",
@@ -1160,7 +1164,7 @@ Projects & Solutions         </Typography>
             </Box>
           </Box>
         </Box>
-
+  
         {/* 6th Part Portfolio-  Github Profile */}
         <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
           {/* Portfolio */}
