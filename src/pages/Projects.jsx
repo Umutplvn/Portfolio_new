@@ -95,8 +95,7 @@ const Projects = () => {
                 transition: "transform 1s ease-in-out, color 1s ease-in-out",
               }}
             >
-              Imagination Trumps Knowledge!{" "}
-            </Typography>
+Projects & Solutions         </Typography>
           </Box>
         </section>
 
@@ -193,7 +192,7 @@ const Projects = () => {
                 Connectify is a social platform where users share photos and notes in a story format to build meaningful connections and share experiences.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, Socketio, and
+                  <strong>Powered By:</strong> Redux, JS, React, Socketio, MongoDb, Express, Node.js, MUI and
                   more.
                 </Typography>
               </Box>
@@ -343,6 +342,10 @@ const Projects = () => {
                   >
                     How To Sell
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> Redux, JS, React, MUI, and
+                  more.
+                </Typography>
                 </Box>
                 <Box
                   sx={{
@@ -488,6 +491,10 @@ const Projects = () => {
                   >
                     Movie App
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> Redux, JS, React, HTML, CSS, Firebase and 
+                  more.
+                </Typography>
                 </Box>
                 <Box
                   sx={{
@@ -611,7 +618,7 @@ const Projects = () => {
                     fontSize: "1.1rem",
                   }}
                 >
-                  Financial MAnagament Application
+                  Financial Managament Application
                 </Typography>
                 <Typography
                   sx={{
@@ -637,8 +644,9 @@ const Projects = () => {
 
 
 </Typography>
-                <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, and more.
+<Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> Redux, JS, React, MongoDb, Express, Node.js, MUI and
+                  more.
                 </Typography>
               </Box>
               <Box
@@ -789,6 +797,10 @@ const Projects = () => {
                   >
                     Legere
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> Redux, JS, React, MongoDb, Express, Node.js, MUI and
+                  more.
+                </Typography>
                 </Box>
                 <Box
                   sx={{
@@ -936,6 +948,11 @@ const Projects = () => {
                   >
                     NBA Legends
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> React, JS, CSS, HTML and
+                  more. 
+                </Typography>
+                <br />
                 </Box>
                 <Box
                   sx={{
@@ -1085,7 +1102,7 @@ const Projects = () => {
                   secure Stripe payments.
                 </Typography>
                 <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, Stripe, and
+                  <strong>Powered By:</strong> Redux, JS, React, Stripe, MUI, Socketio, Node.js, MongoDB, Express and
                   more.
                 </Typography>
               </Box>
@@ -1236,6 +1253,10 @@ const Projects = () => {
                   >
                     Portfolio
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Powered By:</strong> React, Node.js, MongoDB, Express, Nodemailer, MUI and
+                  more.
+                </Typography>
                 </Box>
                 <Box
                   sx={{
@@ -1377,8 +1398,14 @@ const Projects = () => {
                     target="_blank"
                   >
                     Github Profile
+                    
                   </Typography>
+                  <Typography sx={{ color: "#646464" }}>
+                  <strong>Projects Featuring:</strong> MERN, HTML, CSS, Tailwind CSS, Sass, Styled Components, Bootstrap, MUI and more.
+              
+                </Typography>  
                 </Box>
+               
                 <Box
                   sx={{
                     mt: "1rem",

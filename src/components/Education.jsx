@@ -126,7 +126,7 @@ export default function Education() {
         </Box>
       </Item>
 
-      <Item isLastItem={true}>
+      <Item >
         <Box
           sx={{
             padding: "0 0 4rem 3rem",

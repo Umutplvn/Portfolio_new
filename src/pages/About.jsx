@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
 import PageTransition from "../components/PageTransition";
+import Certifications from "../components/Certifications";
 
 const About = () => {
   const [inView, setInView] = useState(false);
@@ -28,7 +29,6 @@ const About = () => {
     }, 600);
   }, []);
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -50,7 +50,6 @@ const About = () => {
     };
   }, []);
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -58,7 +57,7 @@ const About = () => {
           setInView1(true);
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     if (countUpRef1.current) {
@@ -72,10 +71,9 @@ const About = () => {
     };
   }, []);
 
-
-return (
+  return (
     <body>
-      <PageTransition/>
+      <PageTransition />
       <Box
         sx={{
           backgroundColor: "#EEEEEC",
@@ -87,31 +85,29 @@ return (
         <Box sx={{ maxWidth: "1200px", m: "auto" }}>
           {/*Main Title */}
           <section>
-          <Box
-            sx={{ width: "100%", display: "flex", justifyContent: "center" }}
-          >
-
-            <Typography
-              component={"h1"}
-              sx={{
-                fontSize: { xs: "3rem", lg: "4rem" },
-                fontWeight: "900",
-                textAlign: "center",
-                pt: "2rem",
-                pb: { xs: "4rem", lg: "6rem" },
-                lineHeight: "4rem",
-                width: { xs: "100%", sm: "500px", md: "100%" },
-                transform: transform ? "translateY(-1rem)" : "translateY(0)",
-                color: transform ? "black" : "#EEEEEC",
-                transition: "transform 1s ease-in-out, color 1s ease-in-out",
-              }}
+            <Box
+              sx={{ width: "100%", display: "flex", justifyContent: "center" }}
+            >
+              <Typography
+                component={"h1"}
+                sx={{
+                  fontSize: { xs: "3rem", lg: "4rem" },
+                  fontWeight: "900",
+                  textAlign: "center",
+                  pt: "2rem",
+                  pb: { xs: "4rem", lg: "6rem" },
+                  lineHeight: "4rem",
+                  width: { xs: "100%", sm: "500px", md: "100%" },
+                  transform: transform ? "translateY(-1rem)" : "translateY(0)",
+                  color: transform ? "black" : "#EEEEEC",
+                  transition: "transform 1s ease-in-out, color 1s ease-in-out",
+                }}
               >
-              Passion Fuels Purpose!
-            </Typography>
-          </Box>
-              </section>
+                Passion Fuels Purpose!
+              </Typography>
+            </Box>
+          </section>
 
-       
           <Box
             sx={{
               width: "100%",
@@ -119,11 +115,10 @@ return (
               flexWrap: "wrap",
               gap: "2rem",
               alignItems: "flex-start",
-              padding:{xs: "0 1.5rem", lg:"0"},
-              justifyContent:{xs: "center", lg:"space-around"},
+              padding: { xs: "0 1.5rem", lg: "0" },
+              justifyContent: { xs: "center", lg: "space-around" },
             }}
           >
-            
             <Box
               sx={{
                 maxWidth: "35rem",
@@ -159,7 +154,7 @@ return (
                   transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
                   color: transform1 ? "#585858" : "#EEEEEC",
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
-                  mb:"0.5rem"
+                  mb: "0.5rem",
                 }}
               >
                 BIOGRAPHY
@@ -221,7 +216,6 @@ return (
             </Box>
             {/* Count Up Section */}
 
-
             {/* Skills */}
             <Box
               ref={countUpRef1}
@@ -245,7 +239,7 @@ return (
                     fontWeight: "900",
                     textAlign: "center",
                     pt: "2rem",
-                    color:"black"
+                    color: "black",
                   }}
                 >
                   Skills
@@ -268,7 +262,7 @@ return (
                   fontWeight: "900",
                   textAlign: "center",
                   p: "3rem",
-                  color:"black"
+                  color: "black",
                 }}
               >
                 Experience
@@ -277,12 +271,11 @@ return (
               <Experience />
             </Box>
 
-                     {/* Experience */}
+            {/* Experience */}
 
-                     <Box
+            <Box
               sx={{
                 width: "100%",
-                
               }}
             >
               <Typography
@@ -291,7 +284,7 @@ return (
                   fontWeight: "900",
                   textAlign: "center",
                   p: "3rem",
-                  color:"black"
+                  color: "black",
                 }}
               >
                 Education
@@ -299,6 +292,31 @@ return (
 
               <Education />
             </Box>
+
+
+                    {/* Experience */}
+
+                    <Box
+              sx={{
+                width: "100%",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: { xs: "3rem", lg: "4rem" },
+                  fontWeight: "900",
+                  textAlign: "center",
+                  p: "3rem",
+                  color: "black",
+                }}
+              >
+                Certifications
+              </Typography>
+
+              <Certifications />
+            </Box>
+
+  
           </Box>
         </Box>
       </Box>
