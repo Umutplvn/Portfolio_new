@@ -721,6 +721,7 @@ Projects & Solutions         </Typography>
             sx={{
               padding: { xs: "2rem", md: "2rem 1rem 2rem 2rem" },
               opacity: inView5 ? 1 : 0,
+              
         transform: inView5 ? "translateY(0)" : "translateY(1rem)",
         transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
               width: { xs: "100%", md: "50%" },
@@ -749,6 +750,7 @@ Projects & Solutions         </Typography>
                       backgroundColor: "white",
                       cursor: "pointer",
                       transition: "transform 0.3s ease-in-out",
+                      transform:"scale(1.01)",
                       ":hover": { transform: "scale(1.1)" },
                       display: "flex",
                       justifyContent: "center",
