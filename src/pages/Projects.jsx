@@ -558,6 +558,7 @@ Projects & Solutions         </Typography>
         <Box 
         ref={ref4}
         sx={{ padding: "2rem",
+      
         opacity: inView4 ? 1 : 0,
         transform: inView4 ? "translateY(0)" : "translateY(1rem)",
         transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
@@ -568,6 +569,7 @@ Projects & Solutions         </Typography>
               display: "flex",
               justifyContent: "center",
               flexWrap: "wrap",
+              
               padding: { xs: "1.5rem", sm: "3rem" },
               border: "1px solid black",
               boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
@@ -587,6 +589,7 @@ Projects & Solutions         </Typography>
                     width: "100%",
                     cursor: "pointer",
                     transition: "transform 0.3s ease-in-out",
+                    transform: "scale(1.01)",
                     ":hover": { transform: "scale(1.1)" },
                     display: "flex",
                     justifyContent: "center",
