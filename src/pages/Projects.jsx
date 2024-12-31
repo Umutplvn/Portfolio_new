@@ -804,7 +804,7 @@ Projects & Solutions         </Typography>
                     Legere
                   </Typography>
                   <Typography sx={{ color: "#646464" }}>
-                  <strong>Powered By:</strong> Redux, JS, React, MongoDb, Express, Node.js, MUI and
+                  <strong>Powered By:</strong> MERN, MUI and
                   more.
                 </Typography>
                 </Box>
@@ -958,7 +958,6 @@ Projects & Solutions         </Typography>
                   <strong>Powered By:</strong> React, JS, CSS, HTML and
                   more. 
                 </Typography>
-                <br />
                 </Box>
                 <Box
                   sx={{
