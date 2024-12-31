@@ -87,7 +87,7 @@ const Projects = () => {
                 fontWeight: "900",
                 textAlign: "center",
                 pt: "2rem",
-                pb: { xs: "0", md: "2rem", lg: "4rem" },
+                pb: { xs: "0", md: "2rem", lg: "2.5rem" },
                 lineHeight: "4rem",
                 width: { xs: "100%", sm: "500px", md: "100%" },
                 transform: transform ? "translateY(-0.5rem)" : "translateY(0)",
