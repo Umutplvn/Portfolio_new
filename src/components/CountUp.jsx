@@ -57,7 +57,7 @@ const CountUpPage = () => {
         <Typography sx={{ fontSize: "1rem", color: "#515151", transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
               transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center" }}>
-          Projects Completed
+          Projects <br /> Completed
         </Typography>
       </Box>
       <Box
@@ -88,7 +88,7 @@ const CountUpPage = () => {
         <Typography sx={{ fontSize: "1rem", color: "#515151",  transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
               transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center"  }}>
-          Technologies Mastered
+          Technologies <br /> Mastered
         </Typography>
       </Box>
       <Box
@@ -119,7 +119,7 @@ const CountUpPage = () => {
         <Typography sx={{ fontSize: "1rem", color: "#515151",  transform: transform ? "translateY(0)" : "translateY(-1rem)",
               color: transform ? "black" : "#EEEEEC",
               transition: "transform 1s ease-in-out, color 1s ease-in-out", textAlign:"center"  }}>
-          Years of Experience
+          Years of <br /> Experience
         </Typography>
       </Box>
     </Box>
