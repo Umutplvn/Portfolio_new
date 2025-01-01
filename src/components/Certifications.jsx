@@ -13,6 +13,7 @@ function Item({ children, isLastItem }) {
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
+  
   return (
     <motion.div
       ref={ref}
@@ -21,7 +22,7 @@ function Item({ children, isLastItem }) {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className="progress-container"
-      style={{ width: "100%", maxWidth: "40rem", height: "7rem" }}
+      style={{ width: "100%", maxWidth: "40rem", height: "5rem" }}
     >
       <figure className="progress">
         <svg id="progress" width="35" height="35" viewBox="0 0 100 100">
@@ -64,7 +65,11 @@ function Item({ children, isLastItem }) {
   );
 }
 
+
+
 export default function Certifications() {
+
+
   return (
     <Box
       sx={{
@@ -76,9 +81,47 @@ export default function Certifications() {
         flexDirection: "column",
       }}
     >
-
-
-<Item>
+         <Item>
+        <Box
+          sx={{
+            padding: "0 0 4rem 3rem",
+            mt: "-40px",
+            maxWidth: "40rem",
+            width: "100%",
+          }}
+        >
+          <Typography
+            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
+          >
+            Algorithms
+          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>
+              Stanford University |
+            </Typography>
+            <Typography
+              component="a"
+              href="https://www.coursera.org/account/accomplishments/specialization/EPV4X4MV0ENG"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
+        </Box>
+      </Item>
+      
+      <Item>
         <Box
           sx={{
             padding: "0 0 4rem 3rem",
@@ -92,29 +135,29 @@ export default function Certifications() {
           >
             Web Development Essentials{" "}
           </Typography>
-          <Typography sx={{ color: "#515151" }}>Clarusway</Typography>
-          <Typography
-            component="a"
-            href="https://app.diplomade.com/user/badge-detail/41-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Clarusway | </Typography>
+            <Typography
+              component="a"
+              href="https://app.diplomade.com/user/badge-detail/41-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
-
-
 
       <Item>
         <Box
@@ -130,25 +173,27 @@ export default function Certifications() {
           >
             Web Development with React{" "}
           </Typography>
-          <Typography sx={{ color: "#515151" }}>Clarusway</Typography>
-          <Typography
-            component="a"
-            href="https://app.diplomade.com/user/badge-detail/42-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Clarusway |</Typography>
+            <Typography
+              component="a"
+              href="https://app.diplomade.com/user/badge-detail/42-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -166,65 +211,30 @@ export default function Certifications() {
           >
             Backend Development{" "}
           </Typography>
-          <Typography sx={{ color: "#515151" }}>Clarusway</Typography>
-          <Typography
-            component="a"
-            href="https://app.diplomade.com/user/badge-detail/14128032861131-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Clarusway |</Typography>
+            <Typography
+              component="a"
+              href="https://app.diplomade.com/user/badge-detail/14128032861131-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
-<Item>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            Algorithms
-          </Typography>
-          <Typography sx={{ color: "#515151" }}>
-            Stanford University
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.coursera.org/account/accomplishments/specialization/EPV4X4MV0ENG"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
-        </Box>
-      </Item>
-  
+
       <Item>
         <Box
           sx={{
@@ -239,25 +249,27 @@ export default function Certifications() {
           >
             SQL and Relational Databases
           </Typography>
-          <Typography sx={{ color: "#515151" }}>IBM</Typography>
-          <Typography
-            component="a"
-            href="https://courses.cognitiveclass.ai/certificates/798f47c93246430bbe3c740759b01ee5"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>IBM |</Typography>
+            <Typography
+              component="a"
+              href="https://courses.cognitiveclass.ai/certificates/798f47c93246430bbe3c740759b01ee5"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -275,29 +287,30 @@ export default function Certifications() {
           >
             Docker Essentials
           </Typography>
-          <Typography sx={{ color: "#515151" }}>IBM</Typography>
-          <Typography
-            component="a"
-            href="https://courses.cognitiveclass.ai/certificates/40f7b749b25344a4a63c36e65c90613a"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>IBM |</Typography>
+            <Typography
+              component="a"
+              href="https://courses.cognitiveclass.ai/certificates/40f7b749b25344a4a63c36e65c90613a"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
-    
       <Item>
         <Box
           sx={{
@@ -312,25 +325,27 @@ export default function Certifications() {
           >
             MongoDB & Node.js Connection
           </Typography>
-          <Typography sx={{ color: "#515151" }}>MongoDB</Typography>
-          <Typography
-            component="a"
-            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-67f05598-cebc-429c-9ebb-bd45331b989c-certificate.pdf"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>MongoDB |</Typography>
+            <Typography
+              component="a"
+              href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-67f05598-cebc-429c-9ebb-bd45331b989c-certificate.pdf"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -348,28 +363,30 @@ export default function Certifications() {
           >
             Using MongoDB with Node.js{" "}
           </Typography>
-          <Typography sx={{ color: "#515151" }}>MongoDB</Typography>
-          <Typography
-            component="a"
-            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-53b2bdca-b3ab-4c86-9c6d-8daff00fbf6a-certificate.pdf"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>MongoDB |</Typography>
+            <Typography
+              component="a"
+              href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-53b2bdca-b3ab-4c86-9c6d-8daff00fbf6a-certificate.pdf"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
- 
+
       <Item>
         <Box
           sx={{
@@ -384,28 +401,31 @@ export default function Certifications() {
           >
             Node.js MongoDB CRUD
           </Typography>
-          <Typography sx={{ color: "#515151" }}>MongoDB</Typography>
-          <Typography
-            component="a"
-            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-f84d3dec-9b6a-46c5-b949-b13268108a7c-certificate.pdf"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box>
+            <Box sx={{ display: "flex", gap: "0.5rem" }}>
+              <Typography sx={{ color: "#515151" }}>MongoDB |</Typography>
+              <Typography
+                component="a"
+                href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-f84d3dec-9b6a-46c5-b949-b13268108a7c-certificate.pdf"
+                target="_blank"
+                sx={{
+                  backgroundColor: "#EEEEEC",
+                  color: "#323232",
+                  textDecoration: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  ":hover": {
+                    color: "black",
+                  },
+                }}
+              >
+                View
+                <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+              </Typography>
+            </Box>
+          </Box>
         </Box>
       </Item>
-
 
       <Item>
         <Box
@@ -419,27 +439,29 @@ export default function Certifications() {
           <Typography
             sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
           >
-           Node.js MongoDB Aggregation
+            Node.js MongoDB Aggregation
           </Typography>
-          <Typography sx={{ color: "#515151" }}>MongoDB</Typography>
-          <Typography
-            component="a"
-            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-ae521f84-6a91-429e-981d-1d3aabf34f02-certificate.pdf"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>MongoDB |</Typography>
+            <Typography
+              component="a"
+              href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-ae521f84-6a91-429e-981d-1d3aabf34f02-certificate.pdf"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -457,27 +479,27 @@ export default function Certifications() {
           >
             Responsive Web Design
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-           freeCodeCamp
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.freecodecamp.org/certification/fcc35612d2e-b928-4320-b83d-c792a9ee45fb/responsive-web-design"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>freeCodeCamp |</Typography>
+            <Typography
+              component="a"
+              href="https://www.freecodecamp.org/certification/fcc35612d2e-b928-4320-b83d-c792a9ee45fb/responsive-web-design"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -495,32 +517,31 @@ export default function Certifications() {
           >
             Graph Developer - Associate
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-         Apollo GraphQL
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.apollographql.com/tutorials/certifications/cb0af055-6950-4ade-8307-7881c047ed1e"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Apollo GraphQL |</Typography>
+            <Typography
+              component="a"
+              href="https://www.apollographql.com/tutorials/certifications/cb0af055-6950-4ade-8307-7881c047ed1e"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
-      </Item>  
-   
+      </Item>
+
       <Item>
-        
         <Box
           sx={{
             padding: "0 0 4rem 3rem",
@@ -534,30 +555,29 @@ export default function Certifications() {
           >
             ReactJS Tutorial
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-          Great Learning
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.mygreatlearning.com/certificate/KVYARGRA"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
+            <Typography
+              component="a"
+              href="https://www.mygreatlearning.com/certificate/KVYARGRA"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
-
 
       <Item>
         <Box
@@ -573,27 +593,27 @@ export default function Certifications() {
           >
             Frontend Development - CSS
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-            Great Learning
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.mygreatlearning.com/certificate/WRMNVKPR"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
+            <Typography
+              component="a"
+              href="https://www.mygreatlearning.com/certificate/WRMNVKPR"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -611,27 +631,27 @@ export default function Certifications() {
           >
             Frontend Development - HTML
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-            Great Learning
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.mygreatlearning.com/certificate/ACTBRWHW"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
+            <Typography
+              component="a"
+              href="https://www.mygreatlearning.com/certificate/ACTBRWHW"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -649,27 +669,27 @@ export default function Certifications() {
           >
             AWS Certifications
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-         Great Learning
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.mygreatlearning.com/certificate/AYVZTDZM"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
+            <Typography
+              component="a"
+              href="https://www.mygreatlearning.com/certificate/AYVZTDZM"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
 
@@ -687,34 +707,29 @@ export default function Certifications() {
           >
             MongoDB Tutorial
           </Typography>
-          <Typography sx={{ color: "#515151" }}>
-         Great Learning
-          </Typography>
-          <Typography
-            component="a"
-            href="https://www.mygreatlearning.com/certificate/KRKLWYUB"
-            target="_blank"
-            sx={{
-              backgroundColor: "#EEEEEC",
-              color: "#323232",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              ":hover": {
-                color: "black",
-              },
-            }}
-          >
-            View
-            <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-          </Typography>
+          <Box sx={{ display: "flex", gap: "0.5rem" }}>
+            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
+            <Typography
+              component="a"
+              href="https://www.mygreatlearning.com/certificate/KRKLWYUB"
+              target="_blank"
+              sx={{
+                backgroundColor: "#EEEEEC",
+                color: "#323232",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                ":hover": {
+                  color: "black",
+                },
+              }}
+            >
+              View
+              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
+            </Typography>
+          </Box>
         </Box>
       </Item>
-
-
- 
-
-    
     </Box>
   );
 }
