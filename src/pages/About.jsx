@@ -157,7 +157,7 @@ const About = () => {
                   mb: "0.5rem",
                 }}
               >
-                BIOGRAPHY
+                ABOUT ME
               </Typography>{" "}
               <Typography
                 sx={{
