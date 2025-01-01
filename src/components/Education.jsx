@@ -91,8 +91,8 @@ export default function Education() {
             Nov 2022 – Sep 2023 | Clarusway IT School
           </Typography>
           <Typography>
-            Certificates in Backend Development (Sep-23), Web Development with
-            React (Jun-23), and Web Development Essentials (Apr-23) have been
+            Certificates in Backend Development, Web Development with
+            React, and Web Development Essentials have been
             awarded by Clarusway. Advanced skills in backend technologies,
             React.js, and essential web development concepts were acquired.
             Robust and user-friendly web applications are now developed
