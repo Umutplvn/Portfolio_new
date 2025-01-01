@@ -517,10 +517,7 @@ export default function Certifications() {
             <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
           </Typography>
         </Box>
-      </Item>
-
-  
-   
+      </Item>  
    
       <Item>
         
@@ -542,7 +539,7 @@ export default function Certifications() {
           </Typography>
           <Typography
             component="a"
-            href="https://olympus.mygreatlearning.com/courses/52045/certificate"
+            href="https://www.mygreatlearning.com/certificate/KVYARGRA"
             target="_blank"
             sx={{
               backgroundColor: "#EEEEEC",
@@ -560,6 +557,7 @@ export default function Certifications() {
           </Typography>
         </Box>
       </Item>
+
 
       <Item>
         <Box
@@ -580,7 +578,7 @@ export default function Certifications() {
           </Typography>
           <Typography
             component="a"
-            href="https://olympus.mygreatlearning.com/courses/12800/certificate?pb_id=581"
+            href="https://www.mygreatlearning.com/certificate/WRMNVKPR"
             target="_blank"
             sx={{
               backgroundColor: "#EEEEEC",
@@ -618,7 +616,7 @@ export default function Certifications() {
           </Typography>
           <Typography
             component="a"
-            href="https://olympus.mygreatlearning.com/courses/12761/certificate"
+            href="https://www.mygreatlearning.com/certificate/ACTBRWHW"
             target="_blank"
             sx={{
               backgroundColor: "#EEEEEC",
@@ -694,7 +692,7 @@ export default function Certifications() {
           </Typography>
           <Typography
             component="a"
-            href="https://olympus.mygreatlearning.com/courses/46345/certificate"
+            href="https://www.mygreatlearning.com/certificate/KRKLWYUB"
             target="_blank"
             sx={{
               backgroundColor: "#EEEEEC",
