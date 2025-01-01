@@ -70,8 +70,20 @@ export default function Experience() {
           <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}>Full Stack Developer <strong style={{ color: "#B53D95" }}>@Gravitad</strong></Typography>
           <Typography sx={{ color: "#515151" }}>Feb 2022–Present | Dublin, Ireland</Typography>
           <Typography>
-            Develop backend and frontend components, implement features, optimize performance, and collaborate with teams to meet user needs and business goals.
-          </Typography>
+          Developed and optimized web applications using suitable technologies, ensuring seamless integration, scalability, performance, and the delivery of secure, high-quality solutions through effective collaboration.
+
+
+
+
+
+
+
+
+
+
+
+
+</Typography>
         </Box>
       </Item>
 
