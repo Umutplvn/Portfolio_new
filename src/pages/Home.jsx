@@ -154,7 +154,7 @@ const Home = () => {
                     onMouseLeave={() => setHover(false)}
                     component="a"
                     target="_blank"
-                    href="mailto:umutpehlivan2078@gmail.com"
+                    href="mailto:umut.codes@gmail.com"
                   >
                     <Typography
                       style={{
