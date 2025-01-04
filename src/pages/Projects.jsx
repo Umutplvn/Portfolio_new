@@ -1267,7 +1267,7 @@ const Projects = () => {
                     </Typography>
                     <Typography sx={{ color: "#646464" }}>
                       <strong>Powered By:</strong> React, Node.js, MongoDB,
-                      Express, Nodemailer, MUI and more.
+                      Express, Nodemailer, Redux, Material UI, Toastify,  and more.
                     </Typography>
                   </Box>
                   <Box
