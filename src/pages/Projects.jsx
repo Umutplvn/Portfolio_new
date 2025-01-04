@@ -1045,7 +1045,7 @@ const Projects = () => {
                       cursor: "pointer",
 
                       transition: "transform 0.3s ease-in-out",
-                      ":hover": { transform: "scale(1.3) translateY(0.3rem)" },
+                      ":hover": { transform: "scale(1.1)" },
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
