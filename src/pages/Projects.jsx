@@ -349,8 +349,8 @@ const Projects = () => {
                     >
                       How To Sell
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
-                      <strong>Powered By:</strong> Redux, JS, React, MUI, and
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
+                      <strong>Powered By:</strong> React, MongoDB, Node.js, Redux, MUI, Nodemailer and
                       more.
                     </Typography>
                   </Box>
@@ -499,8 +499,8 @@ const Projects = () => {
                     >
                       Movie App
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
-                      <strong>Powered By:</strong> Redux, JS, React, HTML, CSS,
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
+                      <strong>Powered By:</strong> React, Redux, HTML, CSS,
                       Firebase and more.
                     </Typography>
                   </Box>
@@ -655,7 +655,7 @@ const Projects = () => {
                     control.
                   </Typography>
                   <Typography sx={{ color: "#646464" }}>
-                    <strong>Powered By:</strong> Redux, JS, React, MongoDb,
+                    <strong>Powered By:</strong> React, Redux, MongoDb,
                     Express, Node.js, MUI and more.
                   </Typography>
                 </Box>
@@ -808,8 +808,8 @@ const Projects = () => {
                     >
                       Legere
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
-                      <strong>Powered By:</strong> MERN, MUI and more.
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
+                      <strong>Powered By:</strong> MongoDB, Express, React, Node.js, MUI and more.
                     </Typography>
                   </Box>
                   <Box
@@ -959,7 +959,7 @@ const Projects = () => {
                     >
                       NBA Legends
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
                       <strong>Powered By:</strong> React, JS, CSS, HTML and
                       more.
                     </Typography>
@@ -1265,7 +1265,7 @@ const Projects = () => {
                     >
                       Portfolio
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
                       <strong>Powered By:</strong> React, Node.js, MongoDB,
                       Express, Nodemailer, Redux, Material UI, Toastify,  and more.
                     </Typography>
@@ -1410,7 +1410,7 @@ const Projects = () => {
                     >
                       Github Profile
                     </Typography>
-                    <Typography sx={{ color: "#646464" }}>
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
                       <strong>Projects Featuring:</strong> MERN, HTML, CSS,
                       Tailwind CSS, Sass, Styled Components, Bootstrap, MUI and
                       more.
