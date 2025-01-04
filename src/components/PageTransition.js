@@ -11,7 +11,7 @@ const PageTransition = () => {
           width: "100vw",
           height: "150vh",
           zIndex: 30,
-          backgroundColor: "#b63e96",
+          backgroundColor: "#FAFAFA ",
           transform: "translateY(-20rem)",
         }}
         initial={{ x: "0%", width: "100%" }}
@@ -28,7 +28,7 @@ const PageTransition = () => {
           zIndex: 20,
           width: "100vw",
           height: "150vh",
-          backgroundColor: "#EEEEEC",
+          backgroundColor: "#FAFAFA ",
           transform: "translateY(-20rem)",
         }}
         initial={{ x: "0%", width: "100%" }}

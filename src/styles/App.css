@@ -4,11 +4,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  background-color: "#EEEEEC";
+  background-color: "#FAFAFA ";
 }
 
 :root {
-  --font-primary: 'Roboto', Arial, Helvetica, sans-serif;
+  --font-primary: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .inter-font {

@@ -6,17 +6,15 @@ body {
   color: var(--accent);
 }
 
+.connecting-line {
+  position: absolute;
+  left: 0;
+  width: 4px;
+  background-color: black;
+  transform: translateX(15px) translateY(-12px);
+  transition: height 0.1s ease-out;
+}
 
-
-  .connecting-line {
-    position: absolute;
-    left: 0;
-    width: 4px;
-    background-color: black;
-    transform: translateX(15px) translateY(-12px);
-    transition: height 0.1s ease-out;
-  }
-  
 /* Progress Circle Styling */
 .progress {
   position: relative;
@@ -25,11 +23,10 @@ body {
   padding: 0;
 }
 
-
 circle {
   stroke-dashoffset: 0;
   stroke-width: 10px;
-  fill: #EEEEEC;  
+  fill: #fafafa;
 }
 
 .bg {
@@ -44,9 +41,8 @@ circle {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   height: 12px;
-  width:0px;
-  background: white;
-  
+  width: 0px;
+  background: #fafafa;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -58,33 +54,28 @@ circle {
   background: var(--background);
 }
 .progress-container {
-    position: relative;
-    top:0;
-    left:-1rem
-  }
-  
- 
-
+  position: relative;
+  top: 0;
+  left: -1rem;
+}
 
 /* Yeni animasyonlu nokta için */
 @keyframes pulse {
-    0% {
-      transform: scale(0.5);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1);
-      opacity: 0.5;
-    }
-    100% {
-      transform: scale(0.5);
-      opacity: 1;
-    }
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
   }
-  
-  .pulse-dot {
-    animation: pulse 1.5s infinite ease-in-out;
-    fill: #b63e96;
-    
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
   }
-  
+  100% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+}
+
+.pulse-dot {
+  animation: pulse 1.5s infinite ease-in-out;
+  fill: #b63e96;
+}

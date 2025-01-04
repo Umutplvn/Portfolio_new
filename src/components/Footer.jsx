@@ -6,11 +6,10 @@ import { FaMailBulk } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 
 const Footer = () => {
-
   return (
     <Box
       sx={{
-        backgroundColor: "#EEEEEC",
+        backgroundColor: "#FAFAFA ",
         borderTop: "2px solid black",
         width: "100%",
         minHeight: "10vh",
@@ -22,7 +21,7 @@ const Footer = () => {
           justifyContent: "space-between",
           alignItems: "center",
           p: "1.5rem 1.5rem",
-          backgroundColor: "#EEEEEC",
+          backgroundColor: "#FAFAFA ",
           maxWidth: "1200px",
           m: "auto",
         }}
@@ -33,7 +32,7 @@ const Footer = () => {
             maxWidth: "380px",
             textAlign: "center",
             fontWeight: "500",
-            color:"#5b5b5b"
+            color: "#5b5b5b",
           }}
         >
           2024 © All Rights Reserved.
@@ -45,15 +44,13 @@ const Footer = () => {
             maxWidth: "380px",
             textAlign: "center",
             fontWeight: "500",
-            color:"#5b5b5b", 
-            justifyContent:"center",
-             alignItems:"center"
-
+            color: "#5b5b5b",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          
           Built with
-          <FaRegHeart style={{color:"#B63E96", margin:"0 5px"}}/>
+          <FaRegHeart style={{ color: "#B63E96", margin: "0 5px" }} />
           by Umut
         </Typography>
 
@@ -61,7 +58,7 @@ const Footer = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems:"center",
+            alignItems: "center",
             gap: "0.7rem",
             width: { xs: "100%", sm: "7rem" },
           }}
@@ -72,7 +69,7 @@ const Footer = () => {
               color: "black",
               display: "flex",
               justifyContent: "center",
-              alignItems:"bottom",
+              alignItems: "bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",
@@ -92,7 +89,7 @@ const Footer = () => {
               color: "#0B65C2",
               display: "flex",
               justifyContent: "center",
-              alignItems:"bottom",
+              alignItems: "bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",
@@ -112,7 +109,7 @@ const Footer = () => {
               color: "#d33f35",
               display: "flex",
               justifyContent: "center",
-              alignItems:"bottom",
+              alignItems: "bottom",
               ":hover": {
                 cursor: "pointer",
                 transform: "scale(1.05)",

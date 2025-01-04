@@ -13,7 +13,6 @@ function Item({ children, isLastItem }) {
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  
   return (
     <motion.div
       ref={ref}
@@ -65,11 +64,7 @@ function Item({ children, isLastItem }) {
   );
 }
 
-
-
 export default function Certifications() {
-
-
   return (
     <Box
       sx={{
@@ -81,7 +76,7 @@ export default function Certifications() {
         flexDirection: "column",
       }}
     >
-         <Item>
+      <Item>
         <Box
           sx={{
             padding: "0 0 4rem 3rem",
@@ -104,7 +99,7 @@ export default function Certifications() {
               href="https://www.coursera.org/account/accomplishments/specialization/EPV4X4MV0ENG"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -120,7 +115,7 @@ export default function Certifications() {
           </Box>
         </Box>
       </Item>
-      
+
       <Item>
         <Box
           sx={{
@@ -142,7 +137,7 @@ export default function Certifications() {
               href="https://app.diplomade.com/user/badge-detail/41-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -180,7 +175,7 @@ export default function Certifications() {
               href="https://app.diplomade.com/user/badge-detail/42-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -218,7 +213,7 @@ export default function Certifications() {
               href="https://app.diplomade.com/user/badge-detail/14128032861131-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -256,7 +251,7 @@ export default function Certifications() {
               href="https://courses.cognitiveclass.ai/certificates/798f47c93246430bbe3c740759b01ee5"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -294,7 +289,7 @@ export default function Certifications() {
               href="https://courses.cognitiveclass.ai/certificates/40f7b749b25344a4a63c36e65c90613a"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -332,7 +327,7 @@ export default function Certifications() {
               href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-67f05598-cebc-429c-9ebb-bd45331b989c-certificate.pdf"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -370,7 +365,7 @@ export default function Certifications() {
               href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-53b2bdca-b3ab-4c86-9c6d-8daff00fbf6a-certificate.pdf"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -409,7 +404,7 @@ export default function Certifications() {
                 href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-f84d3dec-9b6a-46c5-b949-b13268108a7c-certificate.pdf"
                 target="_blank"
                 sx={{
-                  backgroundColor: "#EEEEEC",
+                  backgroundColor: "#FAFAFA ",
                   color: "#323232",
                   textDecoration: "none",
                   display: "flex",
@@ -448,7 +443,7 @@ export default function Certifications() {
               href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/b97b2c2b-ad39-4a14-9aee-f57de5114ec6-umut-pehlivan-ae521f84-6a91-429e-981d-1d3aabf34f02-certificate.pdf"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -486,7 +481,7 @@ export default function Certifications() {
               href="https://www.freecodecamp.org/certification/fcc35612d2e-b928-4320-b83d-c792a9ee45fb/responsive-web-design"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -524,7 +519,7 @@ export default function Certifications() {
               href="https://www.apollographql.com/tutorials/certifications/cb0af055-6950-4ade-8307-7881c047ed1e"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -562,7 +557,7 @@ export default function Certifications() {
               href="https://www.mygreatlearning.com/certificate/KVYARGRA"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -600,7 +595,7 @@ export default function Certifications() {
               href="https://www.mygreatlearning.com/certificate/WRMNVKPR"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -638,7 +633,7 @@ export default function Certifications() {
               href="https://www.mygreatlearning.com/certificate/ACTBRWHW"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -676,7 +671,7 @@ export default function Certifications() {
               href="https://www.mygreatlearning.com/certificate/AYVZTDZM"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",
@@ -714,7 +709,7 @@ export default function Certifications() {
               href="https://www.mygreatlearning.com/certificate/KRKLWYUB"
               target="_blank"
               sx={{
-                backgroundColor: "#EEEEEC",
+                backgroundColor: "#FAFAFA ",
                 color: "#323232",
                 textDecoration: "none",
                 display: "flex",

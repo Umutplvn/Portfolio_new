@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography } from "@mui/material";
-import brainImg from "../assets/Brainn.webp";
+import brainImg from "../assets/brainspare.webp";
 import CountUpPage from "../components/CountUp";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
@@ -76,7 +76,7 @@ const About = () => {
       <PageTransition />
       <Box
         sx={{
-          backgroundColor: "#EEEEEC",
+          backgroundColor: "#FAFAFA ",
           width: "100vw",
           minHeight: "80vh",
           pb: "20rem",
@@ -99,7 +99,7 @@ const About = () => {
                   lineHeight: "4rem",
                   width: { xs: "100%", sm: "500px", md: "100%" },
                   transform: transform ? "translateY(-1rem)" : "translateY(0)",
-                  color: transform ? "black" : "#EEEEEC",
+                  color: transform ? "black" : "#FAFAFA ",
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
                 }}
               >
@@ -152,7 +152,7 @@ const About = () => {
                   fontSize: { xs: "1.1rem", sm: "1.3rem" },
                   fontWeight: "600",
                   transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
-                  color: transform1 ? "#585858" : "#EEEEEC",
+                  color: transform1 ? "#585858" : "#FAFAFA ",
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
                   mb: "0.5rem",
                 }}
@@ -163,7 +163,7 @@ const About = () => {
                 sx={{
                   fontSize: "1rem",
                   transform: transform1 ? "translateY(0)" : "translateY(-1rem)",
-                  color: transform1 ? "black" : "#EEEEEC",
+                  color: transform1 ? "black" : "#FAFAFA ",
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
                 }}
               >
@@ -293,10 +293,9 @@ const About = () => {
               <Education />
             </Box>
 
+            {/* Experience */}
 
-                    {/* Experience */}
-
-                    <Box
+            <Box
               sx={{
                 width: "100%",
               }}
@@ -315,8 +314,6 @@ const About = () => {
 
               <Certifications />
             </Box>
-
-  
           </Box>
         </Box>
       </Box>
