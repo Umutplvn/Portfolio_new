@@ -166,7 +166,7 @@ const Projects = () => {
                 <Box>
                   <Typography
                     sx={{
-                      color: "#b63e96",
+                      color: "#767676",
                       fontWeight: "500",
                       fontSize: "1.1rem",
                     }}
@@ -284,6 +284,7 @@ const Projects = () => {
                     width: "100%",
                     overflow: "hidden",
                     borderRadius: "1rem",
+                    
                   }}
                 >
                   <Link to="https://howtosell.io/" target="_blank">
@@ -297,6 +298,7 @@ const Projects = () => {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
+                        transform: "scale(1.03)",
                       }}
                     >
                       <img
@@ -322,7 +324,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
@@ -445,6 +447,8 @@ const Projects = () => {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
+                        transform: "scale(1.03)",
+
                       }}
                     >
                       <img
@@ -470,7 +474,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
@@ -620,7 +624,7 @@ const Projects = () => {
                 <Box>
                   <Typography
                     sx={{
-                      color: "#b63e96",
+                      color: "#767676",
                       fontWeight: "500",
                       fontSize: "1.1rem",
                     }}
@@ -779,7 +783,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
@@ -901,6 +905,8 @@ const Projects = () => {
                         display: "flex",
                         justifyContent: "center",
                         overflow: "hidden",
+                        transform: "scale(1.03)",
+
                       }}
                     >
                       <img
@@ -928,7 +934,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
@@ -1043,7 +1049,7 @@ const Projects = () => {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      transform: "scale(1.2) translateY(0.5rem)",
+                      transform: "scale(1.03)",
                     }}
                   >
                     <img
@@ -1071,7 +1077,7 @@ const Projects = () => {
                 <Box>
                   <Typography
                     sx={{
-                      color: "#b63e96",
+                      color: "#767676",
                       fontWeight: "500",
                       fontSize: "1.1rem",
                     }}
@@ -1234,7 +1240,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
@@ -1379,7 +1385,7 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#b63e96",
+                        color: "#767676",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}

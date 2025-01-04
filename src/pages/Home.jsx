@@ -179,7 +179,7 @@ const Home = () => {
                 display: { xs: "none", md: "block" },
                 position: "absolute",
                 right: "3rem",
-                width: { md: "7rem", lg: "8rem" },
+                width: { md: "8rem", lg: "9rem" },
                 opacity: transform2 ? "1" : "0",
                 transition: "opacity 1s ease-in-out",
               }}
