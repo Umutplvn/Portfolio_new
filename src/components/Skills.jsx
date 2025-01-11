@@ -73,6 +73,7 @@ function Skills() {
             {...bind(i)}
             className="card"
             style={{
+              padding:"0.5rem 0",
               transform: interpolate([rot, scale], trans),
               backgroundImage: `url(${skills[i].url})`,
               backgroundSize: 'contain',
