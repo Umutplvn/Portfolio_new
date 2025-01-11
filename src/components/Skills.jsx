@@ -1,23 +1,25 @@
-import React, { useState } from 'react';
-import { useSprings, animated, to as interpolate } from '@react-spring/web';
-import { useDrag } from 'react-use-gesture';
-import '../styles/Skills.css';
+import React, { useState } from "react";
+import { useSprings, animated, to as interpolate } from "@react-spring/web";
+import { useDrag } from "react-use-gesture";
+import "../styles/Skills.css";
+import jsLogo from "../assets/skills/jsCardLogo.png";
+import cssLogo from "../assets/skills/css.svg";
+import htmlLogo from "../assets/skills/html.webp";
+import expressLogo from "../assets/skills/expressjs.png";
+import mongoLogo from "../assets/skills/mongo.png";
+import nodeLogo from "../assets/skills/nodejsLogo.svg";
+import reactLogo from "../assets/skills/react.png";
+import tsLogo from "../assets/skills/Typescript.png";
 
 const skills = [
- 
-    { name: "TypeScript", url: 'https://raw.githubusercontent.com/edent/SuperTinyIcons/d2d4dadd66db9b3ff0cd9297e2c77f44c0e0808e/images/svg/typescript.svg' },
-  { name: "React", url: 'https://raw.githubusercontent.com/vscode-icons/vscode-icons/a4cd157323d217cd61b9efd873197ee6c2bf499b/icons/file_type_reactjs.svg' },
-
-  { name: "Node.js", url: 'https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/nodejs.svg' },
-  { name: "MongoDB", url: 'https://raw.githubusercontent.com/detain/svg-logos/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/m/mongodb-icon-1.svg' },
-
-  { name: "Express", url: 'https://raw.githubusercontent.com/pheralb/svgl/948d2fe59ce136a816f44069484c766de884f2a7/static/library/expressjs.svg' },
-  { name: "HTML5", url: 'https://vectorwiki.com/images/tmnX3__html.svg' },
-  { name: "CSS3", url: 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg' },
-
-
-  { name: "JavaScript", url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' },
- 
+  { name: "TypeScript", url: `${tsLogo}` },
+  { name: "React", url: `${reactLogo}` },
+  { name: "Node.js", url: `${nodeLogo}` },
+  { name: "MongoDB", url: `${mongoLogo}` },
+  { name: "Express", url: `${expressLogo}` },
+  { name: "HTML5", url: `${htmlLogo}` },
+  { name: "CSS3", url: `${cssLogo}` },
+  { name: "JavaScript", url: `${jsLogo}` },
 ];
 
 const to = (i) => ({
@@ -31,7 +33,9 @@ const to = (i) => ({
 const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 
 const trans = (r, s) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
+  `perspective(1500px) rotateX(30deg) rotateY(${
+    r / 10
+  }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Skills() {
   const [gone] = useState(() => new Set());
@@ -40,30 +44,32 @@ function Skills() {
     from: from(i),
   }));
 
-  const bind = useDrag(({ args: [index], down, movement: [mx], direction: [xDir], velocity }) => {
-    const trigger = velocity > 0.2;
-    const dir = xDir < 0 ? -1 : 1;
-    if (!down && trigger) gone.add(index);
-    api.start((i) => {
-      if (index !== i) return;
-      const isGone = gone.has(index);
-      const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
-      const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0);
-      const scale = down ? 1.1 : 1;
-      return {
-        x,
-        rot,
-        scale,
-        delay: undefined,
-        config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
-      };
-    });
-    if (!down && gone.size === skills.length)
-      setTimeout(() => {
-        gone.clear();
-        api.start((i) => to(i));
-      }, 600);
-  });
+  const bind = useDrag(
+    ({ args: [index], down, movement: [mx], direction: [xDir], velocity }) => {
+      const trigger = velocity > 0.2;
+      const dir = xDir < 0 ? -1 : 1;
+      if (!down && trigger) gone.add(index);
+      api.start((i) => {
+        if (index !== i) return;
+        const isGone = gone.has(index);
+        const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0;
+        const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0);
+        const scale = down ? 1.1 : 1;
+        return {
+          x,
+          rot,
+          scale,
+          delay: undefined,
+          config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
+        };
+      });
+      if (!down && gone.size === skills.length)
+        setTimeout(() => {
+          gone.clear();
+          api.start((i) => to(i));
+        }, 600);
+    }
+  );
 
   return (
     <div className="container">
@@ -73,13 +79,13 @@ function Skills() {
             {...bind(i)}
             className="card"
             style={{
-              padding:"0.5rem 0",
+              padding: "0.5rem 0",
               transform: interpolate([rot, scale], trans),
               backgroundImage: `url(${skills[i].url})`,
-              backgroundSize: 'contain',
+              backgroundSize: "contain",
             }}
           >
-            <h4 style={{ padding: '0.5rem' }}>{skills[i].name}</h4>
+            <h4 style={{ padding: "0.5rem" }}>{skills[i].name}</h4>
           </animated.div>
         </animated.div>
       ))}
