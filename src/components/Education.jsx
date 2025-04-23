@@ -11,8 +11,7 @@ function Item({ children, isLastItem }) {
   });
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-
-
+  
   return (
     <motion.div
       ref={ref}
