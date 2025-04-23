@@ -115,38 +115,13 @@ export default function Education() {
             Bachelor’s Degree in Mechanical Engineering
           </Typography>
           <Typography sx={{ color: "#515151" }}>
-            Jun 2016 –Jun 2018 | Ege University | Izmir, Turkey
+            Jun 2014 –Jun 2018 | Ege University | Izmir, Turkey
           </Typography>
           <Typography>
             A Bachelor's Degree in Mechanical Engineering was completed at Ege
             University, demonstrating a comprehensive understanding of
             mechanical systems, engineering principles, and practical
             applications.
-          </Typography>
-        </Box>
-      </Item>
-
-      <Item >
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            Bachelor’s Degree in Mechanical Engineering
-          </Typography>
-          <Typography sx={{ color: "#515151" }}>
-            Sep 2014 – Jun 2016 | Turkish Military Academy | Ankara, Turkey
-          </Typography>
-          <Typography> </Typography>
-          <Typography>
-            A Bachelor's Degree in Mechanical Engineering was completed at the
-            Turkish Military Academy, reflecting a commitment to rigorous
-            academic standards and strict discipline.
           </Typography>
         </Box>
       </Item>
