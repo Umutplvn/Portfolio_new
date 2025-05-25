@@ -15,7 +15,7 @@ import githublogo from "../assets/projects/github.png";
 import { useInView } from "react-intersection-observer";
 import PageTransition from "../components/PageTransition";
 import countries from "../assets/projects/Countries.png"
-
+import xpertaiLogo from '../assets/projects/xpertai.png'
 const Projects = () => {
   const [transform, setTransform] = useState(false);
 
@@ -64,6 +64,11 @@ const Projects = () => {
   });
 
   const { ref: ref10, inView: inView10 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref: ref11, inView: inView11 } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
@@ -1173,7 +1178,7 @@ const Projects = () => {
             </Box>
           </Box>
 
-          {/* 6th Part Portfolio-  Github Profile */}
+          {/* 6th Part Portfolio*/}
           <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
             {/* Portfolio */}
             <Box
@@ -1480,15 +1485,164 @@ const Projects = () => {
             </Box>
           </Box>
 
+         {/* XpertAi-Github Profile  */}
 
-            {/* Github Profile */}
-            <Box
+
+          <Box sx={{ width: "100%", display: "flex", flexWrap: "wrap" }}>
+           {/* XpertAi */}
+         <Box
               ref={ref10}
               sx={{
                 padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
                 width: { xs: "100%", md: "50%" },
                 opacity: inView10 ? 1 : 0,
                 transform: inView10 ? "translateY(0)" : "translateY(1rem)",
+                transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
+              }}
+            >
+              <Box
+                sx={{
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  padding: { xs: "1.5rem", sm: "3rem 3rem 1rem 3rem" },
+                  border: "1px solid black",
+                  boxShadow: "rgba(0, 0, 0, 1) 7px 7px 0px;",
+                  borderRadius: "1rem",
+                }}
+              >
+                <Box
+                  sx={{
+                    width: "100%",
+                    overflow: "hidden",
+                    borderRadius: "1rem",
+                  }}
+                >
+                  <Link to="https://xpert-ai.netlify.app/" target="_blank">
+                    <Box
+                      sx={{
+                        backgroundColor: "#FAFAFA ",
+                        width: "100%",
+                        cursor: "pointer",
+                        transition: "transform 0.3s ease-in-out",
+                        ":hover": { transform: "scale(1.1)" },
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src={xpertaiLogo}
+                        alt=""
+                        style={{
+                          width: "100%",
+                        }}
+                      />
+                    </Box>
+                  </Link>
+                </Box>
+
+                <Box
+                  sx={{
+                    width: "100%",
+                    padding: { xs: "1rem 0", md: "1rem 0 0.5rem 0" },
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Box>
+                    <Typography
+                      sx={{
+                        color: "#767676",
+                        fontWeight: "500",
+                        fontSize: "1.1rem",
+                      }}
+                    >
+                     AI Interview
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontWeight: "700",
+                        fontSize: "1.5rem",
+                        mb: "0.7rem",
+                        ":hover": {
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                        },
+                        color: "black",
+                        textDecoration: "none",
+                      }}
+                      component="a"
+                      href="https://github.com/Umutplvn/ai-interview-app"
+                      target="_blank"
+                    >
+                      Xpert AI
+                    </Typography>
+                    <Typography sx={{ color: "#646464", minHeight:"4.5rem" }}>
+                      <strong>Powered By:</strong> React, HTML, CSS, TypeScript, Vapi, Google Gemini, Firebase
+                     
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    sx={{
+                      mt: "1rem",
+                      display: "flex",
+                      gap: "0.5rem",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <Typography
+                      component="a"
+                      href="https://xpert-ai.netlify.app/"
+                      target="_blank"
+                      sx={{
+                        textDecoration: "none",
+                        fontWeight: "500",
+                        fontSize: "1.1rem",
+                        ":hover": {
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                        },
+                        color: "black",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Visit
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+
+                        fontSize: "2rem",
+                        color: "black",
+                        ":hover": {
+                          cursor: "pointer",
+                          transform: "scale(1.01)",
+                          transition: "transform 0.3s ease-in-out",
+                        },
+                      }}
+                      component="a"
+                      href="https://github.com/Umutplvn/ai-interview-app"
+                      target="_blank"
+                    >
+                      <FaGithub />
+                    </Box>{" "}
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+
+            {/* Github Profile */}
+            <Box
+              ref={ref11}
+              sx={{
+                padding: { xs: "2rem", md: "2rem 2rem 2rem 1rem" },
+                width: { xs: "100%", md: "50%" },
+                opacity: inView11 ? 1 : 0,
+                transform: inView11 ? "translateY(0)" : "translateY(1rem)",
                 transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
               }}
             >
@@ -1545,12 +1699,13 @@ const Projects = () => {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#767676",
+                        color: "#FAFAFA",
                         fontWeight: "500",
                         fontSize: "1.1rem",
                       }}
                     >
-                      <br />
+                 .
+
                     </Typography>
                     <Typography
                       sx={{
@@ -1627,9 +1782,11 @@ const Projects = () => {
                 </Box>
               </Box>
             </Box>
+            
+          </Box>
 
 
-          
+        
 
 
         </Box>

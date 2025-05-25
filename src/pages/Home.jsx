@@ -97,7 +97,7 @@ const Home = () => {
                   transition: "transform 1s ease-in-out, color 1s ease-in-out",
                 }}
               >
-                As a skilled full-stack developer, I am dedicated to turning
+                As a skilled frontend developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
                 web development.
