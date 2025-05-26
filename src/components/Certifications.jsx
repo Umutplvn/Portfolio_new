@@ -134,7 +134,7 @@ export default function Certifications() {
             <Typography sx={{ color: "#515151" }}>Clarusway | </Typography>
             <Typography
               component="a"
-              href="https://app.diplomade.com/user/badge-detail/41-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              href="https://c11n.clarusway.com/en/verify/03815958382580?ref=email"
               target="_blank"
               sx={{
                 backgroundColor: "#FAFAFA ",
@@ -172,7 +172,7 @@ export default function Certifications() {
             <Typography sx={{ color: "#515151" }}>Clarusway |</Typography>
             <Typography
               component="a"
-              href="https://app.diplomade.com/user/badge-detail/42-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              href="https://c11n.clarusway.com/en/verify/39790688641852?ref=email"
               target="_blank"
               sx={{
                 backgroundColor: "#FAFAFA ",
@@ -210,7 +210,7 @@ export default function Certifications() {
             <Typography sx={{ color: "#515151" }}>Clarusway |</Typography>
             <Typography
               component="a"
-              href="https://app.diplomade.com/user/badge-detail/14128032861131-0x269216b27f0883973AA9eCD2555f3B3F2E8C9885"
+              href="https://c11n.clarusway.com/en/verify/26596890897761?ref=email"
               target="_blank"
               sx={{
                 backgroundColor: "#FAFAFA ",
@@ -498,7 +498,7 @@ export default function Certifications() {
         </Box>
       </Item>
 
-      <Item>
+      <Item isLastItem={true}>
         <Box
           sx={{
             padding: "0 0 4rem 3rem",
@@ -536,195 +536,8 @@ export default function Certifications() {
         </Box>
       </Item>
 
-      <Item>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            ReactJS Tutorial
-          </Typography>
-          <Box sx={{ display: "flex", gap: "0.5rem" }}>
-            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
-            <Typography
-              component="a"
-              href="https://www.mygreatlearning.com/certificate/KVYARGRA"
-              target="_blank"
-              sx={{
-                backgroundColor: "#FAFAFA ",
-                color: "#323232",
-                textDecoration: "none",
-                display: "flex",
-                alignItems: "center",
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              View
-              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-            </Typography>
-          </Box>
-        </Box>
-      </Item>
+     
 
-      <Item>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            Frontend Development - CSS
-          </Typography>
-          <Box sx={{ display: "flex", gap: "0.5rem" }}>
-            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
-            <Typography
-              component="a"
-              href="https://www.mygreatlearning.com/certificate/WRMNVKPR"
-              target="_blank"
-              sx={{
-                backgroundColor: "#FAFAFA ",
-                color: "#323232",
-                textDecoration: "none",
-                display: "flex",
-                alignItems: "center",
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              View
-              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-            </Typography>
-          </Box>
-        </Box>
-      </Item>
-
-      <Item>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            Frontend Development - HTML
-          </Typography>
-          <Box sx={{ display: "flex", gap: "0.5rem" }}>
-            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
-            <Typography
-              component="a"
-              href="https://www.mygreatlearning.com/certificate/ACTBRWHW"
-              target="_blank"
-              sx={{
-                backgroundColor: "#FAFAFA ",
-                color: "#323232",
-                textDecoration: "none",
-                display: "flex",
-                alignItems: "center",
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              View
-              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-            </Typography>
-          </Box>
-        </Box>
-      </Item>
-
-      <Item>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            AWS Certifications
-          </Typography>
-          <Box sx={{ display: "flex", gap: "0.5rem" }}>
-            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
-            <Typography
-              component="a"
-              href="https://www.mygreatlearning.com/certificate/AYVZTDZM"
-              target="_blank"
-              sx={{
-                backgroundColor: "#FAFAFA ",
-                color: "#323232",
-                textDecoration: "none",
-                display: "flex",
-                alignItems: "center",
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              View
-              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-            </Typography>
-          </Box>
-        </Box>
-      </Item>
-
-      <Item isLastItem={true}>
-        <Box
-          sx={{
-            padding: "0 0 4rem 3rem",
-            mt: "-40px",
-            maxWidth: "40rem",
-            width: "100%",
-          }}
-        >
-          <Typography
-            sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: "600" }}
-          >
-            MongoDB Tutorial
-          </Typography>
-          <Box sx={{ display: "flex", gap: "0.5rem" }}>
-            <Typography sx={{ color: "#515151" }}>Great Learning |</Typography>
-            <Typography
-              component="a"
-              href="https://www.mygreatlearning.com/certificate/KRKLWYUB"
-              target="_blank"
-              sx={{
-                backgroundColor: "#FAFAFA ",
-                color: "#323232",
-                textDecoration: "none",
-                display: "flex",
-                alignItems: "center",
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              View
-              <FaExternalLinkAlt style={{ marginLeft: "0.5rem" }} />
-            </Typography>
-          </Box>
-        </Box>
-      </Item>
     </Box>
   );
 }
